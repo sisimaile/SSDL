@@ -3,8 +3,26 @@
 
 
 ?>
+
+
 <footer class="page-footer font-small">
-  
+  <div class="container-fluid">
+    <div class="row text-center">
+      <div class="col-md-4">
+        <img src="" alt="" class="">
+        <hr class="light">
+        <p>555-888-333</p>
+        <p>info@ssdl.nl</p>
+        <p>Javalaan 100</p>
+        <p>1066 IJ Amsterdam</p>
+      </div>
+
+      <div class="col-md-4">
+        <hr class="light">
+        <h5>openingstijden</h5>
+      </div>
+    </div>
+  </div>
   <div class="footer-copyright text-center py-3">© 2019 Copyright SSDL</div>
 
 </footer>
