@@ -4,6 +4,13 @@ include 'processen/Connection.php';
 include 'processen/Pagina.php';
 include 'processen/ViewPagina.php';
 
+if (isset($_POST['paginadelete'])){
+    $paginaID = $_POST['id'];
+
+    $delete = new Pagina();
+    $delete->deletePagina($paginaID);
+}
+
 ?>
 
 <!DOCTYPE html>

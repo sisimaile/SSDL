@@ -3,6 +3,9 @@
 include "header.php";
 include "nav.php";
 
+include 'processen/Connection.php';
+include 'processen/Pagina.php';
+include 'processen/ViewPagina.php';
 ?>
 <!--FIXED BACKGROUND-->
 <figure>
@@ -68,7 +71,13 @@ include "nav.php";
     </div>
 </div>
 
+<?php
+$paginas = new ViewPagina();
+$paginas->showAllPaginasTitel();
+?>
+
 <hr class="my-4">
+
 
 <?php
 include "footer.php";
