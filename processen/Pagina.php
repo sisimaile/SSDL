@@ -2,33 +2,45 @@
 
 include_once('Connection.php');
 
-class Pagina
+
+class Pagina extends Connection
 {
-    private $db;
-
-    public function __construct()
+    protected function getAllPaginas()
     {
-        $this->db = new Connection();
-        $this->db = $this->db->DB();
-    }
+        $sql = "SELECT * FROM pagina";
+        $result = $this->connect()->query($sql);
+        $numRows = $result->num_rows;
 
-    public function List_Pagina()
-    {
-        $db = $this->db;
-        $st = $db->prepare("SELECT * FROM pagina");
-        $st->execute();
-
-        while ($result = $st->fetch(PDO::FETCH_ASSOC)){
-            $result['Pagina_ID'];
-            $result['Pagina_titel'];
-            $result['Pagina_tekst'];
-            $result['Pagina_image'];
-
-            foreach ($result as $pagina){
-                $pagina_titel = $pagina['1'];
-                
+        if ($numRows > 0){
+            while ($row = $result->fetch_assoc()){
+                $data[] = $row;
             }
+            return $data;
         }
     }
 
+    public function addPaginas($titel, $message, $image)
+    {
+        if(!empty($titel) && !empty($message) && !empty($image)){
+            $sqltiteltest = "SELECT * FROM `pagina` WHERE `Pagina_titel` = '$titel'";
+            $result = $this->connect()->query($sqltiteltest);
+            $results = $result->num_rows;
+
+            if ($results > 0){
+                header("Location: pagina-toevoegen.php?pagina-bestaat-al");
+            }else{
+                $sqltoevoegen = "INSERT INTO `pagina` (Pagina_titel, Pagina_tekst, Pagina_image) VALUES ('$titel', '$message', '$image')";
+                $link = $this->connect()->query($sqltoevoegen);
+                if ($link){
+                    header("Location: homepage.php?pagina-aangemaakt");
+                }else{
+                    header("Location: pagina-toevoegen.php?pagina-is-niet-aangemaakt");
+                }
+
+            }
+        } else {
+            echo "titel, tekst of image is leeg";
+        }
+
+    }
 }

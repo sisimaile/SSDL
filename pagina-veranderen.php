@@ -2,8 +2,6 @@
 
 include 'processen/Connection.php';
 include 'processen/Pagina.php';
-include 'processen/ViewPagina.php';
-
 ?>
 
 <!DOCTYPE html>
@@ -22,4 +20,3 @@ include 'processen/ViewPagina.php';
         ?>
     </section>
 </body>
-

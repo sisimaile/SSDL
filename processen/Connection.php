@@ -3,8 +3,19 @@
 
 class Connection
 {
-    public function DB(){
-        return new PDO("mysql:host=localhost; dbname=ssdl", "root", "");
+    private $servername;
+    private $username;
+    private $password;
+    private $dbname;
+
+    protected function connect() {
+        $this->servername = "localhost";
+        $this->username = "root";
+        $this->password = "";
+        $this->dbname = "ssdl";
+
+        $conn = new mysqli($this->servername, $this->username, $this->password, $this->dbname);
+        return $conn;
     }
 
 }
