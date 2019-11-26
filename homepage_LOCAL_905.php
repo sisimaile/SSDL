@@ -7,10 +7,7 @@ include 'processen/Connection.php';
 include 'processen/Pagina.php';
 include 'processen/ViewPagina.php';
 <<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/JacobJan
 =======
 >>>>>>> origin/JacobJan
 ?>
@@ -107,7 +104,6 @@ $paginas = new ViewPagina();
 $paginas->showAllPaginasTitel();
 ?>
 
-<<<<<<< HEAD
 <hr class="my-4">
 
 
@@ -164,10 +160,6 @@ $paginas->showAllPaginasTitel();
 </div>
 
 
-=======
-<hr class="my-4">
-
->>>>>>> origin/JacobJan
 
 <?php
 include "footer.php";
