@@ -6,7 +6,10 @@ include "nav.php";
 include 'processen/Connection.php';
 include 'processen/Pagina.php';
 include 'processen/ViewPagina.php';
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/JacobJan
 ?>
 <div class="content">
 <!--FIXED BACKGROUND-->
@@ -96,12 +99,12 @@ include 'processen/ViewPagina.php';
     </div>
 </div>
 
-<hr class="my-4">
-
 <?php
 $paginas = new ViewPagina();
 $paginas->showAllPaginasTitel();
 ?>
+
+<hr class="my-4">
 
 
 <!--SPONSOREN-->
