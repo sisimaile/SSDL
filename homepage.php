@@ -3,6 +3,10 @@
 include "header.php";
 include "nav.php";
 
+include 'processen/Connection.php';
+include 'processen/Pagina.php';
+include 'processen/ViewPagina.php';
+
 ?>
 <div class="content">
 <!--FIXED BACKGROUND-->
@@ -94,7 +98,10 @@ include "nav.php";
 
 <hr class="my-4">
 
-
+<?php
+$paginas = new ViewPagina();
+$paginas->showAllPaginasTitel();
+?>
 
 
 <!--SPONSOREN-->
