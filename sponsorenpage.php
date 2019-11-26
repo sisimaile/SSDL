@@ -14,67 +14,98 @@ include "header.php";
     </di>
 </div>
 
-<!--CARDS-->
-<div class="container-fluid padding">
-    <div class="row">
-        <div class="col-md-4">
-            <div class="card">
-                <img src="images/sponsor1.jpg" alt="" class="card-img-top">
-                <div class="card-body">
-                    <h4 class="card-title">Fabula Activus</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, necessitatibus!</p>
-                    <a href="#" class="btn btn-outline-secondary">see sponsor</a>
-                </div>
-            </div>
-        </div>
+<hr class="my-4">
 
-        <div class="col-md-4">
-            <div class="card">
-                <img src="images/sponsor1.jpg" alt="" class="card-img-top">
-                <div class="card-body">
-                    <h4 class="card-title">Chamomilla</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, necessitatibus!</p>
-                    <a href="#" class="btn btn-outline-secondary">see sponsor</a>
-                </div>
-            </div>
+<!--TWO COLUMN SECTION sponsoren-->
+<div class="container padding">
+    <div class="row padding">
+        <div class="col-lg-6 text-center">
+        <i class="fab fa-canadian-maple-leaf"></i>
         </div>
-
-        <div class="col-md-4">
-            <div class="card">
-                <img src="images/sponsor1.jpg" alt="" class="card-img-top">
-                <div class="card-body">
-                    <h4 class="card-title">Xpector</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, necessitatibus!</p>
-                    <a href="#" class="btn btn-outline-secondary">see sponsor</a>
-                </div>
-            </div>
+        <div class="col-md-12 col-lg-6">
+            <h2>Lorem ipsum dolor sit...</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis asperiores nemo fugit nostrum repellat cumque quisquam vero? 
+                Nihil laudantium pariatur atque, dolor recusandae error eum? In ipsam, quia eos ipsa officiis, ad corrupti error ratione 
+                porro odio laudantium reiciendis consequatur aliquam nihil delectus tempora. Sapiente blanditiis nostrum incidunt dolore ex.</p>
+            <br>
+            
         </div>
+       
+    </div>
+</div>
 
-        <div class="col-md-4">
-            <div class="card">
-                <img src="images/sponsor1.jpg" alt="" class="card-img-top">
-                <div class="card-body">
-                    <h4 class="card-title">Skrepr</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, necessitatibus!</p>
-                    <a href="#" class="btn btn-outline-secondary">see sponsor</a>
-                </div>
-            </div>
+<hr class="my-4">
+
+<div class="container padding">
+    <div class="row padding">
+    <div class="col-lg-6 text-center">
+    <i class="fas fa-tree"></i>
         </div>
-
-        <div class="col-md-4">
-            <div class="card">
-                <img src="images/sponsor1.jpg" alt="" class="card-img-top">
-                <div class="card-body">
-                    <h4 class="card-title">Suplacon</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, necessitatibus!</p>
-                    <a href="#" class="btn btn-outline-secondary">see sponsor</a>
-                </div>
-            </div>
+        <div class="col-md-12 col-lg-6">
+            <h2>Lorem ipsum dolor sit...</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis asperiores nemo fugit nostrum repellat cumque quisquam vero? 
+                Nihil laudantium pariatur atque, dolor recusandae error eum? In ipsam, quia eos ipsa officiis, ad corrupti error ratione 
+                porro odio laudantium reiciendis consequatur aliquam nihil delectus tempora. Sapiente blanditiis nostrum incidunt dolore ex.</p>
+            <br>
+           
         </div>
     </div>
 </div>
 
+<hr class="my-4">
 
+<div class="container padding">
+    <div class="row padding">
+    <div class="col-lg-6 text-center">
+        <i class="fab fa-pagelines"></i>
+        </div>
+        <div class="col-md-12 col-lg-6">
+            <h2>Lorem ipsum dolor sit...</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis asperiores nemo fugit nostrum repellat cumque quisquam vero? 
+                Nihil laudantium pariatur atque, dolor recusandae error eum? In ipsam, quia eos ipsa officiis, ad corrupti error ratione 
+                porro odio laudantium reiciendis consequatur aliquam nihil delectus tempora. Sapiente blanditiis nostrum incidunt dolore ex.</p>
+            <br>
+            
+        </div>
+    </div>
+</div>
+
+<hr class="my-4">
+
+<div class="container padding">
+    <div class="row padding">
+    <div class="col-lg-6 text-center">
+    <i class="fas fa-feather"></i>
+        </div>
+        <div class="col-md-12 col-lg-6">
+            <h2>Lorem ipsum dolor sit...</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis asperiores nemo fugit nostrum repellat cumque quisquam vero? 
+                Nihil laudantium pariatur atque, dolor recusandae error eum? In ipsam, quia eos ipsa officiis, ad corrupti error ratione 
+                porro odio laudantium reiciendis consequatur aliquam nihil delectus tempora. Sapiente blanditiis nostrum incidunt dolore ex.</p>
+            <br>
+            
+        </div>
+    </div>
+</div>
+
+<hr class="my-4">
+
+<div class="container padding">
+    <div class="row padding">
+    <div class="col-lg-6 text-center">
+        <i class="fas fa-paw"></i>
+        </div>
+        <div class="col-md-12 col-lg-6">
+            <h2>Lorem ipsum dolor sit...</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis asperiores nemo fugit nostrum repellat cumque quisquam vero? 
+                Nihil laudantium pariatur atque, dolor recusandae error eum? In ipsam, quia eos ipsa officiis, ad corrupti error ratione 
+                porro odio laudantium reiciendis consequatur aliquam nihil delectus tempora. Sapiente blanditiis nostrum incidunt dolore ex.</p>
+            <br>
+          </div>
+    </div>
+</div>
+
+<hr class="my-4">
 
 <?php
 
