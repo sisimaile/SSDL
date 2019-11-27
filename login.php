@@ -34,7 +34,7 @@ if (isset($_POST['submit'])){
     </section>
 
 
-
+</body>
 <?php
 //include "footer.php";
 ?>

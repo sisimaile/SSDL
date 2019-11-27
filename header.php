@@ -17,8 +17,9 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet">
     <!--<link rel="stylesheet" type="text/css" href="css/style_homepage.css">-->
-    <link rel="stylesheet" type="text/css" href="stylentest.css">
-    <link rel="stylesheet" type="text/css" href="style_loginpage.css">
+    <link rel="stylesheet" type="text/css" href="css/stylentest.css">
+    <link rel="stylesheet" type="text/css" href="css/style_loginpage.css">
+    <link rel="stylesheet" type="text/css" href="css/style_leden-aanmelden.css">
   </head>
   <body>
  
