@@ -1,8 +1,8 @@
 <?php
 
+include_once "Connection.php";
 
-
-Class ActivityValidator extends db {
+Class ActivityValidator extends Connection {
     private $data;
     private $errors = [];
     private static $fields = ['titelactiviteit' , 'datumactiviteit', 'straatactiviteit', 'huisnummeractiviteit', 'postcodeactiviteit', 'plaatsactiviteit', 'beschrijvingactiviteit' ];
@@ -105,11 +105,29 @@ Class ActivityValidator extends db {
 
     }
     
-    private function addToDb() { 
-        $stmt = $this->connect()->prepare("INSERT INTO activiteit (Activiteit_Naam, Activiteit_Straat, Activiteit_Huisnummer, Activiteit_Plaats, Activiteit_Beschrijving) VALUES (?, ?, ?, ?, ?, ?, ?)");
-       
-        $stmt->execute($this->data['titelactiviteit'], $this->data['straatactiviteit'], $this->data['huisnummeractiviteit'], $this->data['plaatsactiviteit'] , $this->data['beschrijvingactiviteit']);
-        $stmt->close();
+    public function addToDb() { 
+
+        $conn = $this->connect();
+
+        $titelactiviteit = $this->data['titelactiviteit'];
+        $straatactiviteit = $this->data['straatactiviteit'];
+        $huisnummeractiviteit = $this->data['huisnummeractiviteit'];
+        $plaatsactiviteit = $this->data['plaatsactiviteit'];
+        $beschrijvingactiviteit = $this->data['beschrijvingactiviteit'];
+
+        var_dump ($titelactiviteit);
+        $stmt = "INSERT INTO `activiteit` (Activiteit_Naam, Activiteit_Straat, Activiteit_Huisnummer, Activiteit_Plaats,
+         Activiteit_Beschrijving) VALUES ('$titelactiviteit', '$straatactiviteit', '$huisnummeractiviteit', '$plaatsactiviteit', '$beschrijvingactiviteit')";
+        $result = $conn->query($stmt);
+
+        if($result) {
+            echo "activiteit met succes aangemaakt";
+        } else{
+            echo "sql error:" . $conn->error;
+            return;
+        }
+        
+        //$stmt->close();
     }
 
     private function addError($key, $val) {

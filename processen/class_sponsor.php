@@ -1,6 +1,8 @@
 <?php
 
-class Sponsor extends db {
+include_once "Connection.php";
+
+class Sponsor extends Connection {
     public $naam_sponsor;
     public $straat_sponsor;
     public $huisnummer_sponsor;

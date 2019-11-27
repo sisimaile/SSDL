@@ -1,8 +1,8 @@
 <?php
-include "classes/class_db.php";
+include "processen/Connection.php";
 include "header.php";
-include "classes/class_sponsor.php";
-include "classes/class_view_sponsor.php";
+include "processen/class_sponsor.php";
+include "processen/class_view_sponsor.php";
 
 
 //include "nav.php";

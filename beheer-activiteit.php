@@ -1,6 +1,6 @@
 <?php 
-include "classes/class_db.php";
-require("classes/class_activiteit.php");
+include "processen/class_db.php";
+require("processen/class_activiteit.php");
 //include "test/viewActivity.php";
 include "header.php";
 //include "nav.php";
@@ -20,7 +20,7 @@ if(isset($_POST["activiteittoevoegen"])) {
     <form action="<?php echo $_SERVER["PHP_SELF"] ?>" method="POST">
         <div class="form-group ">
             <label for="titelactiveit">titel activiteit</label>
-            <input type="text" class="form-control" id="titelactiviteit" name="titelactiviteit" placeholder="Sponsorloop 2020" value="">
+            <input type="text" class="form-control" id="titelactiviteit" name="titelactiviteit" placeholder="Sponsorloop 2020" >
             <div class="error">
                 <?php echo $errors['titelactiviteit'] ?? '' ?>
             </div>
