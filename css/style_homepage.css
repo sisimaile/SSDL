@@ -1,32 +1,10 @@
 body{
   overflow-x: hidden;
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin: 0px;
+  padding: 0px;
 
 }
-
-.home-inner{
-  background-image: url("images/img3.jpg");
-}
-
-.caption {
-  width: 100%;
-  max-width: 100%;
-  position: absolute;
-  top: 38%;
-  z-index: 1;
-  color: white;
-
-}
-
-.caption h1{
-  font-size: 3.8rem;
-  font-weight: 700;
-}
-
-.caption h3{
-  font-size: 2em;
-}
-
-
 /* The side navigation menu */
 .navbar-brand i{
   color: teal;
@@ -64,22 +42,84 @@ body{
   }
   
   /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+
+  
+.landing .home-wrap .home-inner{
+  background-image: url(images/img3.jpg) blue;
+}
+
+.fixed-wrap0 {
+  position: relative;
+  text-align: center;
+  padding: 0px;
+   margin: 0px;
+  
+}
+
+.centered0{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.caption h1{
+  font-size: 3.8rem;
+  font-weight: 700;
+}
+
+.caption h3{
+  font-size: 2em;
+}
   div.content {
     margin-left: 200px;
     padding: 0px 0px;
     height: 1000px;
   }
 
-  .two-column {
-    background-color: teal;
-    color: white;
+   /*backgroundimage SECTION ACTIVITIES */
+  .fixed-wrap {
+    position: relative;
+    text-align: center;
+    padding: 0px;
+     margin: 0px;
+    
   }
 
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  /*TWO COLUMN SECTION ACTIVITIES */
+  
+
+  .two-column-section1{
+     background-color: teal;
+     color: white;
+     padding: 0px;
+     margin: 0px;
+  }
+
+  .two-column-section2{
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .two-column h2 {
+    font-family: 'Neucha', cursive;
+    letter-spacing: 0.4em;
+  }
+  
   .three-column i {
     color: teal;
     font-size: 4em;
     margin: 1rem;
   }
+  /*GET TO KNOW THE SPONSORS*/
 
   .sponsorenkennen i {
     color: teal;
@@ -87,12 +127,13 @@ body{
     margin: 1rem;    
   }
   
+  /*FOOTER*/
   .footer {
     /*position: fixed;*/
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: yellow;
+    background-color: green;
     color: white;
     text-align: center;
   }
@@ -104,6 +145,7 @@ body{
       height: auto;
       position: relative;
     }
+
     .sidebar a {float: left;}
     div.content {margin-left: 0;}
   }

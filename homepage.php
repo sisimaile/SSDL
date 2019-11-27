@@ -9,23 +9,24 @@ include 'processen/ViewPagina.php';
 ?>
 
 
-<div class="content">
+<div class="content">  <!--Houd overige apart-->
 <!--FIXED BACKGROUND-->
 
-        <div class="landing">
-            <div class="home-wrap">
-                <div class="home-inner">
+    <div class="fixed-wrap0">
+        <div id="fixed">
+            <img src="images/img2.jpg" alt="" class="img-fluid">
+                <div class="centered0">
+                <h1 class="display-2">Bedankt!</h1>
+                <h3>De kabouter is u dankbaar!</h3>
                 </div>
-            </div>
         </div>
+    </div>
+   
 
-        <div class="caption text-center">
-            <h1 class="display-2">Bedankt!</h1>
-            <h3>De kabouter is u dankbaar!</h3>
-        </div>
+<div class="my-4"> </div>
 
-<hr class="my-4">
 
+<!--TWO COLUMN SECTION ABOUT US-->
             
 <div class="container-fluid padding">
     <div class="row padding">
@@ -71,20 +72,19 @@ include 'processen/ViewPagina.php';
 </div>
 
 <!--FIXED BACKGROUND2-->
-<figure>
+
     <div class="fixed-wrap">
         <div id="fixed">
             <img src="images/img3.jpg" alt="" class="img-fluid">
-            <h3 class="display-4 text-center">Lorem ipsum dolor sit amet.</h3>
+            <h3 class="display-4 text-center centered">Lorem ipsum dolor sit amet.</h3>
         </div>
     </div>
-</figure>
-<p>testestestetstetstetstetstetst</p>
+
 
 <!--TWO COLUMN SECTION ACTIVITEITENN-->
-<div class="container-fluid padding">
-    <div class="row padding">
-        <div class="col-md-12 col-lg-6 two-column">
+<div class="container-fluid">
+    <div class="row two-column">
+        <div class="col-md-12 col-lg-6 two-column-section1 ">
             <h2>Lorem ipsum dolor sit...</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis asperiores nemo fugit nostrum repellat cumque quisquam vero? 
                 Nihil laudantium pariatur atque, dolor recusandae error eum? In ipsam, quia eos ipsa officiis, ad corrupti error ratione 
@@ -92,7 +92,7 @@ include 'processen/ViewPagina.php';
             <br>
             <a href="#" class="btn btn-primary">meer activiteiten</a>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 two-column-section2">
             <img src="images/img1.jpg" class="img-fluid" alt="">
         </div>
     </div>
