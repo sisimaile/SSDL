@@ -27,8 +27,9 @@ include "header.php";
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis asperiores nemo fugit nostrum repellat cumque quisquam vero? 
                 Nihil laudantium pariatur atque, dolor recusandae error eum? In ipsam, quia eos ipsa officiis, ad corrupti error ratione 
                 porro odio laudantium reiciendis consequatur aliquam nihil delectus tempora. Sapiente blanditiis nostrum incidunt dolore ex.</p>
-            <br>
-            
+            <br>value="wijzig sponsor gegevens"
+            <a href="sponsor_wijzigen.php" class="btn btn-primary" role="button">sponsor wijzigen</a>
+            <input type="submit" class="btn btn-primary" name="wijzigSponsor" value="wijzig opslaan">
         </div>
        
     </div>

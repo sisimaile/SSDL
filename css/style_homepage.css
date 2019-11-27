@@ -1,4 +1,38 @@
+body{
+  overflow-x: hidden;
+
+}
+
+.home-inner{
+  background-image: url("images/img3.jpg");
+}
+
+.caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 38%;
+  z-index: 1;
+  color: white;
+
+}
+
+.caption h1{
+  font-size: 3.8rem;
+  font-weight: 700;
+}
+
+.caption h3{
+  font-size: 2em;
+}
+
+
 /* The side navigation menu */
+.navbar-brand i{
+  color: teal;
+  font-size: 4em;
+}
+
 .sidebar {
     margin: 0;
     padding: 0;
@@ -32,16 +66,33 @@
   /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
   div.content {
     margin-left: 200px;
-    padding: 1px 16px;
+    padding: 0px 0px;
     height: 1000px;
+  }
+
+  .two-column {
+    background-color: teal;
+    color: white;
+  }
+
+  .three-column i {
+    color: teal;
+    font-size: 4em;
+    margin: 1rem;
+  }
+
+  .sponsorenkennen i {
+    color: teal;
+    font-size: 4em;
+    margin: 1rem;    
   }
   
   .footer {
-   /* position: fixed;*/
+    /*position: fixed;*/
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: red;
+    background-color: yellow;
     color: white;
     text-align: center;
   }

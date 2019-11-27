@@ -22,10 +22,10 @@ Class ActivityValidator extends db {
         $this->validateTitelActiviteit();
         $this->validateStraat();
         $this->validateHuisnummer();
-        $this->validatePostcode();
+        //$this->validatePostcode();
         $this->validatePlaats();
         $this->validateBeschrijving();
-        $this->retrieveFromDb();
+        $this->addToDb();
         return $this->errors;
     }
 
@@ -67,6 +67,7 @@ Class ActivityValidator extends db {
 
     }
     
+    
     private function validatePostcode() {
         $val = trim($this->data['postcodeactiviteit']);
 
@@ -104,17 +105,11 @@ Class ActivityValidator extends db {
 
     }
     
-    protected function retrieveFromDb() { //get all users
-        $sql = "SELECT * FROM activiteit";
-        $result = $this->connect()->query($sql);
-        $numRows = $result->num_rows;
-
-        if($numRows > 0){
-            while($row = $result->fetch_assoc()) {
-                $data[] = $row;
-            }
-            return $data; 
-        }
+    private function addToDb() { 
+        $stmt = $this->connect()->prepare("INSERT INTO activiteit (Activiteit_Naam, Activiteit_Straat, Activiteit_Huisnummer, Activiteit_Plaats, Activiteit_Beschrijving) VALUES (?, ?, ?, ?, ?, ?, ?)");
+       
+        $stmt->execute($this->data['titelactiviteit'], $this->data['straatactiviteit'], $this->data['huisnummeractiviteit'], $this->data['plaatsactiviteit'] , $this->data['beschrijvingactiviteit']);
+        $stmt->close();
     }
 
     private function addError($key, $val) {

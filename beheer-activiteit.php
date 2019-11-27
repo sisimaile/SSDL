@@ -1,7 +1,7 @@
 <?php 
 include "classes/class_db.php";
 require("classes/class_activiteit.php");
-include "test/viewActivity.php";
+//include "test/viewActivity.php";
 include "header.php";
 //include "nav.php";
 
@@ -81,10 +81,10 @@ if(isset($_POST["activiteittoevoegen"])) {
 </form>
 </div>
 <?php
-
+/*
 $activiteit = new viewActivity();
 $activiteit->showAllActivities();
-
+*/
 ?>
 
 <?php

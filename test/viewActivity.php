@@ -1,6 +1,6 @@
 <?php
 
-class viewActivity extends ActivityValidator {
+/*class viewActivity extends ActivityValidator {
     
     public function showAllActivities () {
         $datas = $this->retrieveFromDb();
@@ -9,4 +9,4 @@ class viewActivity extends ActivityValidator {
             echo $data ['Activiteit_Naam'];
         }
     }
-}
+}*/

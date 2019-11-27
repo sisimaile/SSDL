@@ -14,6 +14,7 @@ class db {
         $this->dbname = "ssdl";
 
         $conn = new mysqli($this->servername, $this->username, $this->password, $this->dbname);
+        echo "connectie ok";
         return $conn;
     }
 

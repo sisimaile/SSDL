@@ -11,21 +11,22 @@ include 'processen/ViewPagina.php';
 
 <div class="content">
 <!--FIXED BACKGROUND-->
-<div class="row">
-    <div class="col">
-        <div class="container">
-            <img src="images/img3.jpg" alt="" class="img-fluid">
-            <div class=" centered">
-                <h1 class="display-2">Bedankt!</h1>
-                <h3>De kabouter is u dankbaar!</h3>
+
+        <div class="landing">
+            <div class="home-wrap">
+                <div class="home-inner">
+                </div>
             </div>
         </div>
-    </div>
-</div>
 
+        <div class="caption text-center">
+            <h1 class="display-2">Bedankt!</h1>
+            <h3>De kabouter is u dankbaar!</h3>
+        </div>
 
 <hr class="my-4">
 
+            
 <div class="container-fluid padding">
     <div class="row padding">
         <div class="col-md-12 col-lg-6">
@@ -45,7 +46,7 @@ include 'processen/ViewPagina.php';
 <hr class="my-4">
 
 <!--THREE COLUMN SECTION-->
-<div class="container-fluid padding">
+<div class="container-fluid padding three-column">
     <div class="row text-center padding">
         <div class="col-12">
             <h1 class="display-4">Leer de kabouter kennen!</h1>
@@ -78,12 +79,12 @@ include 'processen/ViewPagina.php';
         </div>
     </div>
 </figure>
-
+<p>testestestetstetstetstetstetst</p>
 
 <!--TWO COLUMN SECTION ACTIVITEITENN-->
 <div class="container-fluid padding">
     <div class="row padding">
-        <div class="col-md-12 col-lg-6">
+        <div class="col-md-12 col-lg-6 two-column">
             <h2>Lorem ipsum dolor sit...</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis asperiores nemo fugit nostrum repellat cumque quisquam vero? 
                 Nihil laudantium pariatur atque, dolor recusandae error eum? In ipsam, quia eos ipsa officiis, ad corrupti error ratione 
@@ -114,21 +115,26 @@ $paginas->showAllPaginasTitel();
         <hr>
         
     </div>
-    <div class="row">
+    <div class="row sponsorenkennen text-center">
         <div class="col-md-2">
         <i class="fab fa-canadian-maple-leaf"></i>
+        <h3>Chamomilla</h3>
         </div>
         <div class="col-md-2">
         <i class="fas fa-tree"></i>
+        <h3>Fabula Activus</h3>
         </div>
         <div class="col-md-2">
         <i class="fab fa-pagelines"></i>
+        <h3>Suplacon</h3>
         </div>
         <div class="col-md-2">
         <i class="fas fa-feather"></i>
+        <h3>ROC friese poort</h3>
         </div>
         <div class="col-md-2">
         <i class="fas fa-paw"></i>
+        <h3>Credon</h3>
         </div>
     </div>
     <div class="row text-center">
@@ -154,11 +160,12 @@ $paginas->showAllPaginasTitel();
         </div>
     </div>
 </div>
-
+<p>testestestetstetstetstetstetst</p>
+<?php
+include "footer.php";
+?>
 </div>
 
 
 
-<?php
-include "footer.php";
-?>
+

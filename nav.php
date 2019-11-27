@@ -1,7 +1,7 @@
 
 <div class="sidebar">
     <div class="sidebar-header">   
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand text-center" href="#">
             <i class="fas fa-leaf"></i>
         </a>      <!--Add link to home -->
     </div>

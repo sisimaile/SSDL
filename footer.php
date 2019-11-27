@@ -5,8 +5,8 @@
 ?>
 
 
-<footer class="footer content font-small">
-  <div class="container-fluid">
+<footer class="footer">
+  <div class="container">
     <div class="row text-center">
       <div class="col-md-4">
         <img src="" alt="" class="">
