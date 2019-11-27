@@ -1,0 +1,159 @@
+body{
+    overflow-x: hidden;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin: 0px;
+    padding: 0px;
+  
+  }
+  /* The side navigation menu */
+  .navbar-brand i{
+    color: teal;
+    font-size: 4em;
+  }
+  
+  .sidebar {
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      background-color: #f1f1f1;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+    }
+    
+    /* Sidebar links */
+    .sidebar a {
+      display: block;
+      color: black;
+      padding: 16px;
+      text-decoration: none;
+    }
+    
+    /* Active/current link */
+    .sidebar a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+    
+    /* Links on mouse-over */
+    .sidebar a:hover:not(.active) {
+      background-color: #555;
+      color: white;
+    }
+    
+    /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  
+    
+  .landing .home-wrap .home-inner{
+    background-image: url(images/img3.jpg) blue;
+  }
+  
+  .fixed-wrap0 {
+    position: relative;
+    text-align: center;
+    padding: 0px;
+     margin: 0px;
+    
+  }
+  
+  .centered0{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
+  .caption h1{
+    font-size: 3.8rem;
+    font-weight: 700;
+  }
+  
+  .caption h3{
+    font-size: 2em;
+  }
+    div.content {
+      margin-left: 200px;
+      padding: 0px 0px;
+      height: 1000px;
+    }
+  
+     /*backgroundimage SECTION ACTIVITIES */
+    .fixed-wrap {
+      position: relative;
+      text-align: center;
+      padding: 0px;
+       margin: 0px;
+      
+    }
+  
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+    }
+    /*TWO COLUMN SECTION ACTIVITIES */
+    
+  
+    .two-column-section1{
+       background-color: teal;
+       color: white;
+       padding: 0px;
+       margin: 0px;
+    }
+  
+    .two-column-section2{
+      padding: 0px;
+      margin: 0px;
+    }
+  
+    .two-column h2 {
+      font-family: 'Neucha', cursive;
+      letter-spacing: 0.4em;
+    }
+    
+    .three-column i {
+      color: teal;
+      font-size: 4em;
+      margin: 1rem;
+    }
+    /*GET TO KNOW THE SPONSORS*/
+  
+    .sponsorenkennen i {
+      color: teal;
+      font-size: 4em;
+      margin: 1rem;    
+    }
+    
+    /*FOOTER*/
+    .footer {
+      /*position: fixed;*/
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: green;
+      color: white;
+      text-align: center;
+    }
+  
+    /* On screens that are less than 700px wide, make the sidebar into a topbar */
+    @media screen and (max-width: 700px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+  
+      .sidebar a {float: left;}
+      div.content {margin-left: 0;}
+    }
+    
+    /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+    @media screen and (max-width: 400px) {
+      .sidebar a {
+        text-align: center;
+        float: none;
+      }
+    }
