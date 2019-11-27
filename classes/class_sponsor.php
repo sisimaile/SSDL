@@ -37,6 +37,9 @@ class Sponsor extends db {
         $editSponsor ="UPDATE sponsor SET  Sponsor_Naam = '$naam_sponsor' , Sponsor_Straat = '$straat_sponsor', Sponsor_Huisnummer = '$huisnummer_sponsor', Sponsor_Postcode = '$postcode_sponsor',  Sponsor_Plaats = '$plaats_sponsor', Sponsor_Land = '$land_sponsor', Sponsor_Email = '$email_sponsor', 
         Sponsor_Telefoonnummer = '$telefoon_sponsor', Sponsor_Overdesponsor = '$overde_sponsor', Sponsor_Afbeelding = '$afbeelding_sponsor'  WHERE Sponsor_ID = $ID_sponsor";
         $save= $this->connect()->query($editSponsor);
+
+        $sponsorupdaten = new view;
+        $sponsorupdaten->retrieveFromDb();
         
 
 
