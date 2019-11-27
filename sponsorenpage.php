@@ -1,44 +1,45 @@
 <?php
 
 include "header.php";
+include "nav.php";
 ?>
 
 <!--SPONSOREN OVERZICHT-->
-
+<div class="content">
 <div class="container-fluid padding">
     <di class="row text-center">
-        <div class="col-12">
+        <div class="col-12 my-5">
             <h1 class="display-4">Meet the sponsors</h1>
         </div>
-        <hr class="my-4">
+        
     </di>
 </div>
 
-<hr class="my-4">
+
 
 <!--TWO COLUMN SECTION sponsoren-->
-<div class="container padding">
-    <div class="row padding">
+<div class="container ">
+    <div class="row paddng my-4">
         <div class="col-lg-6 text-center">
         <i class="fab fa-canadian-maple-leaf"></i>
         </div>
-        <div class="col-md-12 col-lg-6">
+        <div class="col-md-12 col-lg-6 text-center">
             <h2>Lorem ipsum dolor sit...</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis asperiores nemo fugit nostrum repellat cumque quisquam vero? 
                 Nihil laudantium pariatur atque, dolor recusandae error eum? In ipsam, quia eos ipsa officiis, ad corrupti error ratione 
                 porro odio laudantium reiciendis consequatur aliquam nihil delectus tempora. Sapiente blanditiis nostrum incidunt dolore ex.</p>
-            <br>value="wijzig sponsor gegevens"
-            <a href="sponsor_wijzigen.php" class="btn btn-primary" role="button">sponsor wijzigen</a>
-            <input type="submit" class="btn btn-primary" name="wijzigSponsor" value="wijzig opslaan">
+            <br>
+            
+            <input type="submit" class="btn btn-primary mx-2" name="deleteSponsor" value="delete sponsor">
+            <input type="submit" class="btn btn-primary mx-2" name="wijzigSponsor" value="wijzig opslaan">
         </div>
        
     </div>
 </div>
 
-<hr class="my-4">
 
-<div class="container padding">
-    <div class="row padding">
+<div class="container ">
+    <div class="row padding my-4 ">
     <div class="col-lg-6 text-center">
     <i class="fas fa-tree"></i>
         </div>
@@ -48,15 +49,18 @@ include "header.php";
                 Nihil laudantium pariatur atque, dolor recusandae error eum? In ipsam, quia eos ipsa officiis, ad corrupti error ratione 
                 porro odio laudantium reiciendis consequatur aliquam nihil delectus tempora. Sapiente blanditiis nostrum incidunt dolore ex.</p>
             <br>
+
+            <input type="submit" class="btn btn-primary mx-2" name="deleteSponsor" value="delete sponsor">
+            <input type="submit" class="btn btn-primary mx-2" name="wijzigSponsor" value="wijzig opslaan">
            
         </div>
     </div>
 </div>
 
-<hr class="my-4">
 
-<div class="container padding">
-    <div class="row padding">
+
+<div class="container ">
+    <div class="row  my-4">
     <div class="col-lg-6 text-center">
         <i class="fab fa-pagelines"></i>
         </div>
@@ -66,15 +70,18 @@ include "header.php";
                 Nihil laudantium pariatur atque, dolor recusandae error eum? In ipsam, quia eos ipsa officiis, ad corrupti error ratione 
                 porro odio laudantium reiciendis consequatur aliquam nihil delectus tempora. Sapiente blanditiis nostrum incidunt dolore ex.</p>
             <br>
+
+            <input type="submit" class="btn btn-primary mx-2" name="deleteSponsor" value="delete sponsor">
+            <input type="submit" class="btn btn-primary mx-2" name="wijzigSponsor" value="wijzig opslaan">
             
         </div>
     </div>
 </div>
 
-<hr class="my-4">
 
-<div class="container padding">
-    <div class="row padding">
+
+<div class="container ">
+    <div class="row  my-4">
     <div class="col-lg-6 text-center">
     <i class="fas fa-feather"></i>
         </div>
@@ -84,15 +91,18 @@ include "header.php";
                 Nihil laudantium pariatur atque, dolor recusandae error eum? In ipsam, quia eos ipsa officiis, ad corrupti error ratione 
                 porro odio laudantium reiciendis consequatur aliquam nihil delectus tempora. Sapiente blanditiis nostrum incidunt dolore ex.</p>
             <br>
+
+            <input type="submit" class="btn btn-primary mx-2" name="deleteSponsor" value="delete sponsor">
+            <input type="submit" class="btn btn-primary mx-2" name="wijzigSponsor" value="wijzig opslaan">
             
         </div>
     </div>
 </div>
 
-<hr class="my-4">
 
-<div class="container padding">
-    <div class="row padding">
+
+<div class="container ">
+    <div class="row  my-4">
     <div class="col-lg-6 text-center">
         <i class="fas fa-paw"></i>
         </div>
@@ -102,11 +112,21 @@ include "header.php";
                 Nihil laudantium pariatur atque, dolor recusandae error eum? In ipsam, quia eos ipsa officiis, ad corrupti error ratione 
                 porro odio laudantium reiciendis consequatur aliquam nihil delectus tempora. Sapiente blanditiis nostrum incidunt dolore ex.</p>
             <br>
+
+            <input type="submit" class="btn btn-primary mx-2" name="deleteSponsor" value="delete sponsor">
+            <input type="submit" class="btn btn-primary mx-2" name="wijzigSponsor" value="wijzig opslaan">
           </div>
     </div>
 </div>
 
-<hr class="my-4">
+
+</div>
+
+
+
+
+
+
 
 <?php
 

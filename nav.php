@@ -5,28 +5,35 @@
             <i class="fas fa-leaf"></i>
         </a>      <!--Add link to home -->
     </div>
-  <a href="#about">Over ons</a>
-  <a href="#services">Sponsoren</a>
-  <a href="#clients">Activiteiten</a>
-  <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Beheerder</a>
+  <a href="#about" class="text-center">Over ons</a>
+  <a href="#services" class="text-center">Sponsoren</a>
+  <a href="#clients" class="text-center">Activiteiten</a>
+  <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle text-center">Beheerder</a>
                 <ul class="collapse list-unstyled" id="pageSubmenu">
                     <li>
-                        <a href="#"> beheer pagina</a>
+                        <a href="#" class="text-center"> beheer pagina</a>
                     </li>
                     <li>
-                        <a href="#">Beheer leden</a>
+                        <a href="#" class="text-center">Beheer leden</a>
                     </li>
                     <li>
-                        <a href="#">Beheer sponsoren</a>
+                        <a href="#" class="text-center">Beheer sponsoren</a>
                     </li>
                     <li>
-                        <a href="#">Beheer activiteiten</a>
+                        <a href="#" class="text-center">Beheer activiteiten</a>
                     </li>
                 </ul>
+    
+    <div class="knop text-center"> 
+    <button type="button" class="btn btn-primary my-1 text-center">uitloggen</button> <br>
+    <button type="button" class="btn btn-primary my-1 text-center">wijzigingen opslaan</button>
+</div>
 
-    <button type="button" class="btn btn-primary my-1">inloggen</button> 
-    <button type="button" class="btn btn-primary my-1">aanmelden</button> 
-    <button type="button" class="btn btn-primary my-1">uitloggen</button> 
-    <button type="button" class="btn btn-primary my-1">wijzigingen opslaan</button>
+    <div class="knop text-center">            
+    <button type="button" class="btn btn-primary my-1 text-center">inloggen</button><br> 
+    <button type="button" class="btn btn-primary my-1 text-center">aanmelden</button> 
+    </div>
+
+   
 </div>
 

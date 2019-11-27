@@ -30,6 +30,18 @@ body{
       font-size: 20px;
     }
     
+    .knop button{
+      color: white;
+      width: 50%;
+      background: #013220;
+      border: 2px solid #013220;
+      padding: 5px;
+      font-size: 18px;
+      border-radius: 0px;
+      margin: 12px 0;
+
+    }
+
     /* Active/current link */
     .sidebar a.active {
       background-color: #4CAF50;
@@ -78,7 +90,11 @@ body{
       margin-left: 250px;
       padding: 0px 0px;
       height: 1000px;
-    }
+  }
+  
+  .over-ons {
+    font-size: 20px;
+  }
   
      /*backgroundimage SECTION ACTIVITIES */
     .fixed-wrap {
@@ -104,16 +120,22 @@ body{
        color: white;
        padding: 0px;
        margin: 0px;
+      
+   
     }
   
-    .two-column-section2{
+    .two-column-section2  {
       padding: 0px;
       margin: 0px;
+    
     }
   
     .two-column h2 {
       font-family: 'Neucha', cursive;
       letter-spacing: 0.4em;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 90px;
     }
     
     .three-column i {

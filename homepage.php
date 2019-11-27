@@ -29,8 +29,8 @@ include 'processen/ViewPagina.php';
 <!--TWO COLUMN SECTION ABOUT US-->
             
 <div class="container-fluid ">
-    <div class="row ">
-        <div class="col-md-12 col-lg-6">
+    <div class="row my-5">
+        <div class="col-md-12 col-lg-6 over-ons">
             <h2>Stichting Save the Leprechaun...</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis asperiores nemo fugit nostrum repellat cumque quisquam vero? 
                 Nihil laudantium pariatur atque, dolor recusandae error eum? In ipsam, quia eos ipsa officiis, ad corrupti error ratione 
@@ -115,6 +115,7 @@ $paginas->showAllPaginasTitel();
         
     </div>
     <div class="row sponsorenkennen text-center">
+        <div class="col-md-1"></div>
         <div class="col-md-2">
         <i class="fab fa-canadian-maple-leaf"></i>
         <h3>Chamomilla</h3>
@@ -129,12 +130,13 @@ $paginas->showAllPaginasTitel();
         </div>
         <div class="col-md-2">
         <i class="fas fa-feather"></i>
-        <h3>ROC friese poort</h3>
+        <h3>ROC Friese Poort</h3>
         </div>
         <div class="col-md-2">
         <i class="fas fa-paw"></i>
         <h3>Credon</h3>
         </div>
+        <div class="col-md-1"></div>
     </div>
     <div class="row text-center">
         <div class="col">
@@ -159,7 +161,7 @@ $paginas->showAllPaginasTitel();
         </div>
     </div>
 </div>
-<p>testestestetstetstetstetstetst</p>
+
 <?php
 include "footer.php";
 ?>

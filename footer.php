@@ -8,35 +8,7 @@
 <footer class="footer">
   <div class="container">
     <div class="row text-center">
-      <div class="col-md-4">
-        
-        <p>555-888-333</p>
-        <p>info@ssdl.nl</p>
-        <p>Javalaan 100</p>
-        <p>1066 IJ Amsterdam</p>
-      </div>
-
-      <div class="col-md-4">
-        
-        <h5>beschikbaar</h5>
-        
-        <p>Maandag: 09:00 - 17:00</p>
-        <p>Dinsdag: 10:00 - 18:00</p>
-        <p>Woensdag: 10:00 - 18:00</p>
-        <p>Zaterdag: 10:00 - 16:00</p>
-        <p>Zondag: Gesloten</p>
-      </div>
-
-      <div class="col-md-4">
       
-        <h5>vind de kabouter!</h5>
-        
-        <p>City, state, 0000</p>
-        <p>City, state, 0000</p>
-        <p>City, state, 0000</p>
-        <p>City, state, 0000</p>
-        <p>City, state, 0000</p>
-      </div>
       <div class="col-12">
         <hr class="light">
         <h5>© 2019 Copyright SSDL</h5>

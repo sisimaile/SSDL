@@ -21,6 +21,8 @@
     <link rel="stylesheet" type="text/css" href="css/style_loginpage.css">
     <link rel="stylesheet" type="text/css" href="css/style_leden-aanmelden.css">
     <link rel="stylesheet" type="text/css" href="css/style_pagina-change.css">
+    <link rel="stylesheet" type="text/css" href="css/style_sponsorenpage.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon1.png">
   </head>
   <body>
  
