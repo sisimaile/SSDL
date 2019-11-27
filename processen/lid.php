@@ -1,7 +1,107 @@
 <?php
 
+include_once('Connection.php');
 
-class lid
+class lid extends Connection
 {
+    protected function getAllleden()
+    {
+        $sql = "SELECT * FROM lid";
+        $result = $this->connect()->query($sql);
+        $numRows = $result->num_rows;
+
+        if ($numRows > 0){
+            while ($row = $result->fetch_assoc()){
+                $data[] = $row;
+            }
+            return $data;
+        }
+    }
+
+    public function deleteLid($id, $fk){
+        if (!empty($id)) {
+            $sqldeletelid = "DELETE FROM `lid` WHERE `Lid_ID` = '$id'";
+            $resultlid = $this->connect()->query($sqldeletelid);
+
+            $sqldeletegegevens = "DELETE FROM `lidgegevens` WHERE `Lidgegevens_ID` = '$fk'";
+            $resultgegevens = $this->connect()->query($sqldeletegegevens);
+            
+            if (isset($resultlid) && isset($resultgegevens)) {
+                header("Location: leden-beheer.php?lid-verwijdert");
+            } else {
+                header("Location: leden-beheer.php?lid-niet-verwijdert");
+            }
+        }else{
+            header("Location: leden-beheer.php?lid-niet-verwijdert2");
+        }
+    }
+
+    public function addLid($username, $password, $passwordcheck, $email, $telefoonnummer, $plaats, $adres){
+        if (!empty($username) && !empty($password) && !empty($passwordcheck) && !empty($email) &&!empty($telefoonnummer) &&!empty($plaats) && !empty($adres)){
+
+            $sqlgebruikersnaamcheck = "SELECT * FROM `lidgegevens` WHERE `Lid_gebruikersnaam` = '$username'";
+            $result = $this->connect()->query($sqlgebruikersnaamcheck);
+            $results = $result->num_rows;
+
+            if ($results > 0){
+                header("Location: leden-aanmelden.php?gebruikersnaam-bestaat-al");
+            } else {
+                if ($password == $passwordcheck) {
+                    $hashedpassword =  hash('sha256', $password);
+                    $rol = "lid";
+
+                    $conn = $this->connect();
+
+                    $sqlaanmeldenlidgegevens = "INSERT INTO `lidgegevens` (Lid_gebruikersnaam, Lid_wachtwoord, Lid_rol) VALUES ('$username', '$hashedpassword', '$rol')";
+                    $resultaanmeldengegevens = $conn->query($sqlaanmeldenlidgegevens);
+
+                    $lastinsertedID = $conn->insert_id;
+
+                    $conn->close();
+                    $conn2 = $this->connect();
+
+                    $FKlidgegevens = $lastinsertedID;
+
+                    $sqlaanmeldenlid = "INSERT INTO `lid` (Lid_email, Lid_telefoonnummer, Lid_plaats, Lid_adres, FK_lidgegevens_ID) VALUES ('$email', '$telefoonnummer', '$plaats', '$adres', '$FKlidgegevens')";
+                    $resultaanmeldenlid = $conn2->query($sqlaanmeldenlid);
+                    if ($resultaanmeldenlid){
+                        echo "hij werkt";
+                        header("Location: login.php?account-aangemaakt");
+                    } else {
+                        echo "sql error: " . $conn2->error;
+                        return;
+                    }
+
+
+                }else{
+                    header("Location: leden-aanmelden.php?wachtwoorden-komen-niet-overeen");
+                }
+
+            }
+
+        }else{
+            header("Location: leden-aanmelden.php?niet-alle-velden-zijn-ingevuld");
+        }
+    }
+
+    public function loginLid($username, $password){
+        if (!empty($username) && !empty($password)){
+
+            $hashedpassword =  hash('sha256', $password);
+
+            $sqllogincheck = "SELECT * FROM `lidgegevens` WHERE `Lid_gebruikersnaam` = '$username' AND `Lid_wachtwoord` = '$hashedpassword'";
+            $result = $this->connect()->query($sqllogincheck);
+            $results = $result->num_rows;
+
+            if ($results > 0){
+                $_SESSION['lid'] = $username;
+                header("Location: homepage.php?u-bent-ingelogd");
+            }else{
+                echo "de gebruikersnaam of wachtwoord klopt niet";
+            }
+        }else{
+            echo "niet alle velden zijn ingevuld";
+        }
+    }
 
 }
