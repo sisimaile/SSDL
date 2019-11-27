@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    /*background: url(../images/img4.jpg) no-repeat;*/
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+h3 {
+    font-family: 'Neucha', cursive;
+    font-size: 30px;
+    color: black;
+
+}
+
+/*.paginaveranderen-box {
+    width: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}*/
+
+.nieuwe-gegevens{
+    border: 2px solid #013220 ;
+}
+
+.form-group input{
+    border: 2px solid #013220;
+
+}
+
+.form-group p{
+    font-family: 'Neucha', cursive;
+    font-size: 18px;
+}
+
+.form-group textarea {
+    border: 2px solid #013220;
+}
+
+.btn-primary {
+    width: 20%;
+    background: none;
+    border: 2px solid #013220;
+    color: black;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 12px 0;
+}
+
+.btn-primary:hover{
+    width: 20%;
+    background: #013220;
+    border: 2px solid #013220;
+    color: white;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 12px 0;
+}

@@ -28,8 +28,8 @@ include 'processen/ViewPagina.php';
 
 <!--TWO COLUMN SECTION ABOUT US-->
             
-<div class="container-fluid padding">
-    <div class="row padding">
+<div class="container-fluid ">
+    <div class="row ">
         <div class="col-md-12 col-lg-6">
             <h2>Stichting Save the Leprechaun...</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis asperiores nemo fugit nostrum repellat cumque quisquam vero? 
@@ -44,10 +44,9 @@ include 'processen/ViewPagina.php';
     </div>
 </div>
 
-<hr class="my-4">
 
 <!--THREE COLUMN SECTION-->
-<div class="container-fluid padding three-column">
+<div class="container-fluid padding three-column my-4">
     <div class="row text-center padding">
         <div class="col-12">
             <h1 class="display-4">Leer de kabouter kennen!</h1>
@@ -68,12 +67,12 @@ include 'processen/ViewPagina.php';
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, numquam. Sapiente expedita pariatur temporibus assumenda perferendis nobis sunt facilis laborum.</p>
         </div>
     </div>
-    <hr class="my-4">
+    
 </div>
 
 <!--FIXED BACKGROUND2-->
 
-    <div class="fixed-wrap">
+    <div class="fixed-wrap ">
         <div id="fixed">
             <img src="images/img3.jpg" alt="" class="img-fluid">
             <h3 class="display-4 text-center centered">Lorem ipsum dolor sit amet.</h3>

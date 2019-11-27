@@ -14,7 +14,7 @@ body{
   .sidebar {
       margin: 0;
       padding: 0;
-      width: 200px;
+      width: 250px;
       background-color: #f1f1f1;
       position: fixed;
       height: 100%;
@@ -27,6 +27,7 @@ body{
       color: black;
       padding: 16px;
       text-decoration: none;
+      font-size: 20px;
     }
     
     /* Active/current link */
@@ -72,8 +73,9 @@ body{
   .caption h3{
     font-size: 2em;
   }
-    div.content {
-      margin-left: 200px;
+  
+  div.content {
+      margin-left: 250px;
       padding: 0px 0px;
       height: 1000px;
     }
@@ -123,7 +125,7 @@ body{
   
     .sponsorenkennen i {
       color: #013220;
-      font-size: 4em;
+      font-size: 5em;
       margin: 1rem;    
     }
     

@@ -9,8 +9,7 @@
   <div class="container">
     <div class="row text-center">
       <div class="col-md-4">
-        <img src="" alt="" class="">
-        <hr class="light">
+        
         <p>555-888-333</p>
         <p>info@ssdl.nl</p>
         <p>Javalaan 100</p>
@@ -18,9 +17,9 @@
       </div>
 
       <div class="col-md-4">
-        <hr class="light">
+        
         <h5>beschikbaar</h5>
-        <hr class="light">
+        
         <p>Maandag: 09:00 - 17:00</p>
         <p>Dinsdag: 10:00 - 18:00</p>
         <p>Woensdag: 10:00 - 18:00</p>
@@ -29,9 +28,9 @@
       </div>
 
       <div class="col-md-4">
-        <hr class="light">
+      
         <h5>vind de kabouter!</h5>
-        <hr class="light">
+        
         <p>City, state, 0000</p>
         <p>City, state, 0000</p>
         <p>City, state, 0000</p>
