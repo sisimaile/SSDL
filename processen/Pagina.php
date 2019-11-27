@@ -29,7 +29,6 @@ class Pagina extends Connection
                 $data[] = $row;
             }
             return $data;
-            var_dump($data);
         }
     }
 

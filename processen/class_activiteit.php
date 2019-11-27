@@ -6,10 +6,10 @@ Class ActivityValidator extends Connection {
     private $data;
     private $errors = [];
     private static $fields = ['titelactiviteit' , 'datumactiviteit', 'straatactiviteit', 'huisnummeractiviteit', 'postcodeactiviteit', 'plaatsactiviteit', 'beschrijvingactiviteit', 'image'];
-
-    public function __construct($post_data) {
-        $this->data = $post_data;
-    }
+//
+//    public function __construct($post_data) {
+//        $this->data = $post_data;
+//    }
 
     public function validateForm() {
         foreach(self::$fields as $field) {
@@ -132,6 +132,48 @@ Class ActivityValidator extends Connection {
                 $data[] = $row;
             }
             return $data;
+        }
+    }
+
+    public function deleteActiviteit($id){
+        if (!empty($id)) {
+            $sqldelete = "DELETE FROM `activiteit` WHERE `Activiteit_ID` = '$id'";
+            $result = $this->connect()->query($sqldelete);
+            if (isset($result)) {
+                header("Location: activiteiten-overzichtpage.php?pagina-verwijdert");
+            } else {
+                echo "fail";
+            }
+        }else{
+            echo "no id";
+        }
+    }
+
+    protected function getOneActiviteit($id){
+        $sqloneactiviteit = "SELECT * FROM `activiteit` WHERE `Activiteit_ID` = '$id'";
+        $result = $this->connect()->query($sqloneactiviteit);
+        $numRows = $result->num_rows;
+
+        if ($numRows > 0){
+            while ($row = $result->fetch_assoc()){
+                $data[] = $row;
+            }
+            return $data;
+        }
+    }
+
+    public function changeactiviteit($activiteitID, $activiteitennaam, $activiteitendatum, $activiteitenstraat, $activiteitenhuisnummer, $activiteitenpostcode, $activiteitenbeschrijving, $activiteitenimage){
+        if (!empty($activiteitID) && !empty($activiteitennaam) && !empty($activiteitendatum) && !empty($activiteitenstraat) && !empty($activiteitenhuisnummer) && !empty($activiteitenpostcode) && !empty($activiteitenbeschrijving) && !empty($activiteitenimage)){
+            $sqlchange = "UPDATE `activiteit` SET `Activiteit_Naam`= '$activiteitennaam', `Activiteit_Datum`= '$activiteitendatum', `Activiteit_Straat`= '$activiteitenstraat', `Activiteit_Huisnummer`= '$activiteitenhuisnummer', `Activiteit_Postcode`= '$activiteitenpostcode', `Activiteit_Beschrijving`= '$activiteitenbeschrijving', `Activiteit_image`= '$activiteitenimage' WHERE `Activiteit_ID`= '$activiteitID'";
+            $result = $this->connect()->query($sqlchange);
+
+            if (isset($result)){
+                header("Location: activiteiten-overzichtpage.php?pagina-verandert");
+            }else{
+                echo "query didnt work";
+            }
+        }else{
+            header("Location: activiteiten-overzichtpage.php?niet-alles-is-ingevuld");
         }
     }
 }
