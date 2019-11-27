@@ -5,7 +5,7 @@ include_once "Connection.php";
 Class ActivityValidator extends Connection {
     private $data;
     private $errors = [];
-    private static $fields = ['titelactiviteit' , 'datumactiviteit', 'straatactiviteit', 'huisnummeractiviteit', 'postcodeactiviteit', 'plaatsactiviteit', 'beschrijvingactiviteit' ];
+    private static $fields = ['titelactiviteit' , 'datumactiviteit', 'straatactiviteit', 'huisnummeractiviteit', 'postcodeactiviteit', 'plaatsactiviteit', 'beschrijvingactiviteit', 'image'];
 
     public function __construct($post_data) {
         $this->data = $post_data;
@@ -22,7 +22,6 @@ Class ActivityValidator extends Connection {
         $this->validateTitelActiviteit();
         $this->validateStraat();
         $this->validateHuisnummer();
-        //$this->validatePostcode();
         $this->validatePlaats();
         $this->validateBeschrijving();
         $this->addToDb();
@@ -67,19 +66,6 @@ Class ActivityValidator extends Connection {
 
     }
     
-    
-    private function validatePostcode() {
-        $val = trim($this->data['postcodeactiviteit']);
-
-        if(empty($val)) {
-            $this->addError('postcodeactiviteit', 'postcode cannot be empty');
-        } else {
-            if(!preg_match('/^[a-zA-Z0-9]{1,10}$/', $val)) {                                        /*ALS ER TIJD OVER IS VOER EEN CHECK UIT DAT HET 4 LETTERS ZIJN en 2 GETALLEN*/
-                $this->addError('postcodeactiviteit', 'wut'); 
-            }
-        }
-    }
-    
     private function validatePlaats() {
         $val = trim($this->data['plaatsactiviteit']);
 
@@ -110,14 +96,17 @@ Class ActivityValidator extends Connection {
         $conn = $this->connect();
 
         $titelactiviteit = $this->data['titelactiviteit'];
+        $datumactiviteit = $this->data['datumactiviteit'];
         $straatactiviteit = $this->data['straatactiviteit'];
         $huisnummeractiviteit = $this->data['huisnummeractiviteit'];
+        $postcodeactiviteit = $this->data['postcodeactiviteit'];
         $plaatsactiviteit = $this->data['plaatsactiviteit'];
         $beschrijvingactiviteit = $this->data['beschrijvingactiviteit'];
+        $imageactiviteit = $this->data['image'];
 
         var_dump ($titelactiviteit);
-        $stmt = "INSERT INTO `activiteit` (Activiteit_Naam, Activiteit_Straat, Activiteit_Huisnummer, Activiteit_Plaats,
-         Activiteit_Beschrijving) VALUES ('$titelactiviteit', '$straatactiviteit', '$huisnummeractiviteit', '$plaatsactiviteit', '$beschrijvingactiviteit')";
+        $stmt = "INSERT INTO `activiteit` (Activiteit_Naam, Activiteit_datum, Activiteit_Straat, Activiteit_Huisnummer,Activiteit_postcode, Activiteit_Plaats,
+         Activiteit_Beschrijving, Activiteit_image) VALUES ('$titelactiviteit', '$datumactiviteit', '$straatactiviteit', '$huisnummeractiviteit', '$postcodeactiviteit', '$plaatsactiviteit', '$beschrijvingactiviteit', '$imageactiviteit')";
         $result = $conn->query($stmt);
 
         if($result) {
@@ -126,13 +115,24 @@ Class ActivityValidator extends Connection {
             echo "sql error:" . $conn->error;
             return;
         }
-        
-        //$stmt->close();
     }
 
     private function addError($key, $val) {
         $this->errors[$key] = $val;
 
+    }
+
+    public function retrieveactivity() {
+        $sql = "SELECT * FROM activiteit";
+        $result = $this->connect()->query($sql);
+        $numRows = $result->num_rows;
+
+        if($numRows > 0){
+            while($row = $result->fetch_assoc()) {
+                $data[] = $row;
+            }
+            return $data;
+        }
     }
 }
 

@@ -3,6 +3,14 @@
 include "header.php";
 include "nav.php";
 
+include 'processen/Connection.php';
+include 'processen/class_activiteit.php.php';
+include 'processen/viewActivity.php';
+
+
+$activiteit = new viewActivity();
+$activiteit->showAllActivities();
+
 ?>
 
 <div class="container">
