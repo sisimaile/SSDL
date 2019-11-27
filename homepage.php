@@ -28,10 +28,10 @@ include 'processen/ViewPagina.php';
 
 <!--TWO COLUMN SECTION ABOUT US-->
             
-<div class="container-fluid ">
+<div class="container over-ons">
     <div class="row my-5">
-        <div class="col-md-12 col-lg-6 over-ons">
-            <h2>Stichting Save the Leprechaun...</h2>
+        <div class="col-md-12 col-lg-6 ">
+            <h2 class="display-3">Stichting Save the Dutch Leprechaun...</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis asperiores nemo fugit nostrum repellat cumque quisquam vero? 
                 Nihil laudantium pariatur atque, dolor recusandae error eum? In ipsam, quia eos ipsa officiis, ad corrupti error ratione 
                 porro odio laudantium reiciendis consequatur aliquam nihil delectus tempora. Sapiente blanditiis nostrum incidunt dolore ex.</p>
@@ -46,7 +46,7 @@ include 'processen/ViewPagina.php';
 
 
 <!--THREE COLUMN SECTION-->
-<div class="container-fluid padding three-column my-4">
+<div class="container three-column my-4">
     <div class="row text-center padding">
         <div class="col-12">
             <h1 class="display-4">Leer de kabouter kennen!</h1>
