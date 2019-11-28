@@ -1,5 +1,5 @@
 <?php 
-include "processen/class_db.php";
+include "processen/Connection.php";
 require("processen/class_activiteit.php");
 //include "test/viewActivity.php";
 include "header.php";
@@ -75,6 +75,14 @@ if(isset($_POST["activiteittoevoegen"])) {
                     <?php echo $errors['beschrijvingactiviteit'] ?? '' ?>
                  </div>
             
+        </div>
+
+        <div class="form-group col-md-4">
+            <label for="image">image</label>
+            <input type="text" class="form-control" id="image" name="image" placeholder="image.file">
+            <div class="error">
+                <?php echo $errors['image'] ?? '' ?>
+            </div>
         </div>
 
    <button type="submit" name="activiteittoevoegen" class="btn btn-primary">activiteit toevoegen</button>
