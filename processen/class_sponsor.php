@@ -51,12 +51,22 @@ class Sponsor extends Connection {
     }
 
 
-    public function sponsor_delete(){
-        $mysqli = new mysqli ('localhost', 'root', '', 'ssdl') or die(mysqli_error($mysqli));
-        $sponsor_id = $_POST['sponsorVerwijderen'];
-        
-      
-        $mysqli->query("DELETE FROM sponsor WHERE Sponsor_ID = $sponsor_id");
+    public function deleteSponsor($sponsorgegevensid){
+        if (!empty($sponsorgegevensid)) {
+            $sqldeletelidgegevens = "DELETE FROM `lidgegevens` WHERE `Lidgegevens_ID` = '$sponsorgegevensid'";
+            $resultlid = $this->connect()->query($sqldeletelidgegevens);
+
+            $sqldeletelid = "DELETE FROM `lid` WHERE `FK_lidgegevens_ID` = '$sponsorgegevensid'";
+            $resultgegevens = $this->connect()->query($sqldeletelid);
+
+            if (isset($resultlid) && isset($resultgegevens)) {
+                header("Location: sponsorenpage.php?sponsor-verwijdert");
+            } else {
+                header("Location: sponsorenpage.php?sponsor-niet-verwijdert");
+            }
+        }else{
+            header("Location: sponsorenpage.php?sponsor-niet-verwijdert2");
+        }
     }
 
      public function sponsor_edit($ID_sponsor, $naam_sponsor, $straat_sponsor, $huisnummer_sponsor,  $postcode_sponsor, $plaats_sponsor, $land_sponsor, $email_sponsor, $telefoon_sponsor, $overde_sponsor, $afbeelding_sponsor ){

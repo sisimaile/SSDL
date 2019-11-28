@@ -20,7 +20,7 @@ class view extends Sponsor {
                                 <h2>' . $value['Lid_gebruikersnaam'] . '</h2>
                                 <p>' . $sponsor['Lid_tekst'] . '</p>
                                 <br>
-                                <form action="sponsorpage.php" method="post">
+                                <form action="sponsorenpage.php" method="post">
                                     <input type="submit" class="btn btn-primary mx-2" name="deleteSponsor" value="delete sponsor">
                                     <input type="hidden" name="id" value="' . $value['Lidgegevens_ID'] . '"> 
                                 </form>

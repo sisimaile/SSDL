@@ -2,7 +2,15 @@
 
 include "header.php";
 include "nav.php";
-include "processen/class_view_sponsor.php"
+include "processen/class_view_sponsor.php";
+include_once "processen/class_sponsor.php";
+
+if (isset($_POST['deleteSponsor'])){
+    $sponsorid = $_POST['id'];
+
+    $delete = new Sponsor();
+    $delete->deleteSponsor($sponsorid);
+}
 ?>
 
 <!--SPONSOREN OVERZICHT-->
