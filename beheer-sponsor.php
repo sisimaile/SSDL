@@ -10,29 +10,17 @@ include "processen/class_view_sponsor.php";
 
 if(isset($_POST['sponsortoevoegen'])) {
     $naam_sponsor = $_POST['naamsponsor'];
-    $straat_sponsor = $_POST['straatsponsor'];
-    $huisnummer_sponsor = $_POST['huisnummersponsor'];
-    $postcode_sponsor = $_POST['postcodeSponsor'];
-    $plaats_sponsor = $_POST['plaatsSponsor'];
-    $land_sponsor = $_POST['landSponsor'];
     $email_sponsor = $_POST['emailSponsor'];
     $telefoon_sponsor = $_POST['telefoonSponsor'];
     $overde_sponsor = $_POST['overDeSponsor'];
+    $plaats_sponsor = $_POST['plaatsSponsor'];
+    $straat_sponsor = $_POST['straatsponsor'];
+    $huisnummer_sponsor = $_POST['huisnummersponsor'];
+    $postcode_sponsor = $_POST['postcodeSponsor'];
     $afbeelding_sponsor = $_POST['afbeeldingSponsor'];
 
     $nieuweSponsor = new Sponsor;
-    $nieuweSponsor->naam_sponsor = $naam_sponsor;
-    $nieuweSponsor->straat_sponsor = $straat_sponsor;
-    $nieuweSponsor->huisnummer_sponsor =  $huisnummer_sponsor;
-    $nieuweSponsor->postcode_sponsor = $postcode_sponsor;
-    $nieuweSponsor->plaats_sponsor = $plaats_sponsor;
-    $nieuweSponsor->land_sponsor = $land_sponsor;
-    $nieuweSponsor->email_sponsor = $email_sponsor;
-    $nieuweSponsor->telefoon_sponsor = $telefoon_sponsor;
-    $nieuweSponsor->overde_sponsor = $overde_sponsor;
-    $nieuweSponsor->afbeelding_sponsor = $afbeelding_sponsor;
-
-    $nieuweSponsor->sponsor_toevoegen ($naam_sponsor, $straat_sponsor, $huisnummer_sponsor, $postcode_sponsor, $plaats_sponsor, $land_sponsor, $email_sponsor, $telefoon_sponsor, $overde_sponsor, $afbeelding_sponsor );
+    $nieuweSponsor->sponsor_toevoegen ($naam_sponsor, $email_sponsor, $telefoon_sponsor, $overde_sponsor, $plaats_sponsor, $straat_sponsor, $huisnummer_sponsor, $postcode_sponsor, $afbeelding_sponsor );
    
     
 }
@@ -44,7 +32,7 @@ if(isset($_POST['sponsortoevoegen'])) {
 <!--SPONSOR TOEVOEGEN-->
 
 <div class="content container">
-    <form action="<?php echo $_SERVER["PHP_SELF"] ?>" method="POST">
+    <form action="beheer-sponsor.php" method="POST">
         <div class="form-group ">
             <label for="naamsponsor">Naam</label>
             <input type="text" class="form-control" id="naamsponsor" name="naamsponsor" placeholder="Chamomilla" value="">
@@ -80,11 +68,6 @@ if(isset($_POST['sponsortoevoegen'])) {
                 
             </div>
         </div>
-        <div class="form-group">
-                <label for="landSponsor">land sponsor</label>
-                <input type="text" class="form-control" id="landSponsor" name="landSponsor">
-            </div>
-
 
             <div class="form-group">
                 <label for="emailSponsor">email sponsor</label>
@@ -104,7 +87,7 @@ if(isset($_POST['sponsortoevoegen'])) {
 
         <div class="form-group">
             <label for="afbeeldingSponsor">afbeelding sponsor</label>
-            <input type="file" id="afbeeldingSponsor" name="afbeeldingSponsor">
+            <input type="text" id="afbeeldingSponsor" name="afbeeldingSponsor">
         </div>
 
    <button type="submit" name="sponsortoevoegen" class="btn btn-primary">sponsor toevoegen</button>
