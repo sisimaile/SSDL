@@ -3,7 +3,7 @@
 
 class ViewPagina extends Pagina
 {
-    public function showAllPaginas(){
+    public function showAllpaginas(){
         $datas = $this->getAllPaginas();
 
         foreach ($datas as $data){
@@ -40,10 +40,14 @@ class ViewPagina extends Pagina
     public function showOnePagina($id){
         $result = $this->getOnePagina($id);
 
-        foreach ($result as $data) {
-            echo $data['Pagina_ID'];
-            echo $data['Pagina_titel'];
-            echo "<img src='images/" . $data['Pagina_image'] . "'alt='pagina.php image'>";
+        if ($result) {
+            foreach ($result as $data) {
+                echo $data['Pagina_ID'];
+                echo $data['Pagina_titel'];
+                echo "<img src='images/" . $data['Pagina_image'] . "'alt='pagina.php image'>";
+            }
+        }else{
+            echo "pagina niet gevonden";
         }
     }
 }

@@ -6,25 +6,23 @@ class lid extends Connection
 {
     protected function getAllleden()
     {
-        $sql = "SELECT * FROM lid";
-        $result = $this->connect()->query($sql);
+        $sqlselectallleden = "SELECT * FROM `lidgegevens` WHERE `Lid_rol` = 'lid'";
+        $result = $this->connect()->query($sqlselectallleden);
         $numRows = $result->num_rows;
 
-        if ($numRows > 0){
-            while ($row = $result->fetch_assoc()){
-                $data[] = $row;
-            }
-            return $data;
+        while ($row = $result->fetch_assoc()){
+            $data[] = $row;
         }
+        return $data;
     }
 
-    public function deleteLid($id, $fk){
-        if (!empty($id)) {
-            $sqldeletelid = "DELETE FROM `lid` WHERE `Lid_ID` = '$id'";
-            $resultlid = $this->connect()->query($sqldeletelid);
+    public function deleteLid($lidgegevensid){
+        if (!empty($lidgegevensid)) {
+            $sqldeletelidgegevens = "DELETE FROM `lidgegevens` WHERE `Lidgegevens_ID` = '$lidgegevensid'";
+            $resultlid = $this->connect()->query($sqldeletelidgegevens);
 
-            $sqldeletegegevens = "DELETE FROM `lidgegevens` WHERE `Lidgegevens_ID` = '$fk'";
-            $resultgegevens = $this->connect()->query($sqldeletegegevens);
+            $sqldeletelid = "DELETE FROM `lid` WHERE `FK_lidgegevens_ID` = '$lidgegevensid'";
+            $resultgegevens = $this->connect()->query($sqldeletelid);
             
             if (isset($resultlid) && isset($resultgegevens)) {
                 header("Location: leden-beheer.php?lid-verwijdert");

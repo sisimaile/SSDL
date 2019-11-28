@@ -5,11 +5,10 @@ include 'processen/lid.php';
 include 'processen/ViewLid.php';
 
 if (isset($_POST['liddelete'])){
-    $lidID = $_POST['id'];
-    $fk = $_POST['fk'];
+    $lidgegevensID = $_POST['gegevensid'];
 
     $delete = new lid();
-    $delete->deleteLid($lidID, $fk);
+    $delete->deleteLid($lidgegevensID);
 }
 
 ?>
