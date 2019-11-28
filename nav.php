@@ -14,7 +14,7 @@
                         <a href="#" class="text-center"> beheer pagina</a>
                     </li>
                     <li>
-                        <a href="#" class="text-center">Beheer leden</a>
+                        <a href="leden-beheer.php" class="text-center">Beheer leden</a>
                     </li>
                     <li>
                         <a href="beheer-sponsor.php" class="text-center">Beheer sponsoren</a>
