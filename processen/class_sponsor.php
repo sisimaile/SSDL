@@ -69,20 +69,6 @@ class Sponsor extends Connection {
         }
     }
 
-     public function sponsor_edit($ID_sponsor, $naam_sponsor, $straat_sponsor, $huisnummer_sponsor,  $postcode_sponsor, $plaats_sponsor, $land_sponsor, $email_sponsor, $telefoon_sponsor, $overde_sponsor, $afbeelding_sponsor ){
-
-        $sponsor_id = $_POST['sponsorAanpassen'];
-        $editSponsor ="UPDATE sponsor SET  Sponsor_Naam = '$naam_sponsor' , Sponsor_Straat = '$straat_sponsor', Sponsor_Huisnummer = '$huisnummer_sponsor', Sponsor_Postcode = '$postcode_sponsor',  Sponsor_Plaats = '$plaats_sponsor', Sponsor_Land = '$land_sponsor', Sponsor_Email = '$email_sponsor', 
-        Sponsor_Telefoonnummer = '$telefoon_sponsor', Sponsor_Overdesponsor = '$overde_sponsor', Sponsor_Afbeelding = '$afbeelding_sponsor'  WHERE Sponsor_ID = $ID_sponsor";
-        $save= $this->connect()->query($editSponsor);
-
-        $sponsorupdaten = new view;
-        $sponsorupdaten->retrieveFromDb();
-        
-
-
-    }
-
     public function retrievegegevens() {
         $sqlgegevensselect = "SELECT * FROM `lidgegevens` WHERE `Lid_rol` = 'sponsor'";
         $result = $this->connect()->query($sqlgegevensselect);
@@ -108,6 +94,36 @@ class Sponsor extends Connection {
 
                 return $datasponsor;
             }
+        }
+    }
+
+    public function retrieveonegegevens($gegevensid) {
+        $sqlgegevensselect = "SELECT * FROM `lidgegevens` WHERE `Lidgegevens_ID` = '$gegevensid'";
+        $result = $this->connect()->query($sqlgegevensselect);
+        $numRows = $result->num_rows;
+
+
+        if($numRows > 0){
+            while($row = $result->fetch_assoc()) {
+                $data[] = $row;
+            }
+            return $data;
+        }
+    }
+
+    public function wijzigSponsor($sponsorgegevens_id, $sponsornaam, $sponsorstraat, $sponsorhuisnummer, $sponsorpostcode, $sponsorplaats, $sponsoremail, $sponsortelefoonnummer, $sponsortekst, $sponsorlogo){
+        var_dump($sponsorgegevens_id, $sponsornaam, $sponsorstraat, $sponsorhuisnummer, $sponsorpostcode, $sponsorplaats, $sponsoremail, $sponsortelefoonnummer, $sponsortekst, $sponsorlogo);
+        if (!empty($sponsorgegevens_id) && !empty($sponsornaam) && !empty($sponsorstraat) && !empty($sponsorhuisnummer) && !empty($sponsorpostcode) && !empty($sponsorplaats) && !empty($sponsoremail) && !empty($sponsortelefoonnummer) && !empty($sponsortekst) && !empty($sponsorlogo)) {
+            $sqlwijzigsponsorgegevens = "UPDATE `lidgegevens` SET `Lid_gebruikersnaam` = '$sponsornaam' WHERE `Lidgegevens_ID` = '$sponsorgegevens_id'";
+            $result = $this->connect()->query($sqlwijzigsponsorgegevens);
+
+            $sponsoradres = $sponsorpostcode . ' - ' . $sponsorstraat . ' - ' . $sponsorhuisnummer;
+            $sqlwijzigsponsor = "UPDATE `lid` SET `Lid_email` = '$sponsoremail', `Lid_telefoonnummer` = '$sponsortelefoonnummer', `Lid_tekst` = '$sponsortekst', `Lid_plaats` = '$sponsorplaats', `Lid_adres` = '$sponsoradres', `Lid_logo` = '$sponsorlogo' WHERE `FK_lidgegevens_ID` = '$sponsorgegevens_id'";
+            $resulttwee = $this->connect()->query($sqlwijzigsponsor);
+
+            header("Location: sponsorenpage.php?sponsor-gewijzigd");
+        }else{
+            header("Location: sponsorenpage.php?niet-alle-velden-ingevuld");
         }
     }
 }

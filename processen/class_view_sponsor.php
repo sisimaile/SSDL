@@ -33,6 +33,30 @@ class view extends Sponsor {
                     </div>';
         }
     }
+
+    public function viewoneSponsor($gegevensid){
+        $result = $this->retrieveonegegevens($gegevensid);
+
+        foreach ($result as $value){
+            $gegevensid = $value['Lidgegevens_ID'];
+
+            $sponsor = $this->retrievesponsor($gegevensid);
+
+            echo '<div class="container ">
+                        <div class="row paddng my-4">
+                            <div class="col-lg-6 text-center">
+                                <h3>Naam: ' . $value['Lid_gebruikersnaam'] . ' </h3>
+                                <h3>Adres: ' . $sponsor['Lid_adres'] . ' </h3>
+                                <h3>Plaats: ' . $sponsor['Lid_plaats'] . ' </h3>
+                                <h3>Email: ' . $sponsor['Lid_email'] . ' </h3>
+                                <h3>Telefoonnummer: ' . $sponsor['Lid_telefoonnummer'] . ' </h3>
+                                <h3>Tekst: ' . $sponsor['Lid_tekst'] . ' </h3>
+                                <h3>Logo: ' . $sponsor['Lid_logo'] . ' </h3>
+                            </div>
+                        </div>
+                    </div>';
+        }
+    }
 }
 
 
