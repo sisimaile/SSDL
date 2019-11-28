@@ -41,7 +41,7 @@ include 'processen/ViewPagina.php';
             <a href="#" class="btn btn-primary">meer over ons</a>
         </div>
         <div class="col-lg-6">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum.</p>
+          
         </div>
     </div>
 </div>
@@ -90,7 +90,7 @@ include 'processen/ViewPagina.php';
     <div class="row two-column">
         <div class="col-md-12 col-lg-6 two-column-section1 ">
             <h1>Lorem ipsum dolor sit...</h1>
-            <h3>laudantium reiciendis consequatur aliquam nihil</h3>
+            
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis asperiores nemo fugit nostrum repellat cumque quisquam vero? 
                 Nihil laudantium pariatur atque, dolor recusandae error eum? In ipsam, quia eos ipsa officiis, ad corrupti error ratione 
                 porro odio laudantium reiciendis consequatur aliquam nihil delectus tempora. Sapiente blanditiis nostrum incidunt dolore ex.</p>
@@ -119,7 +119,7 @@ $paginas->showAllPaginasTitel();
         <hr>
         
     </div>
-    <div class="row sponsorenkennen text-center">
+    <div class="row sponsorenkennen0 text-center">
         <div class="col-md-1"></div>
         <div class="col-md-2">
         <i class="fab fa-canadian-maple-leaf"></i>
@@ -143,7 +143,7 @@ $paginas->showAllPaginasTitel();
         </div>
         <div class="col-md-1"></div>
     </div>
-    <div class="row sponsorenkennen text-center">
+    <div class="row sponsorenkennen1 text-center">
         <div class="col">
             <button class="btn btn-primary" >Meer over onze sponsoren</button>
         </div>

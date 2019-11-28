@@ -5,7 +5,7 @@
             <i class="fas fa-leaf" id="fafaicon"></i>
         </a>      
     </div>
-  <a href="#" class="text-center">Over ons</a>
+  <a href="over-ons.php" class="text-center">Over ons</a>
   <a href="sponsorenpage.php" class="text-center">Sponsoren</a>
   <a href="activiteiten-overzichtpage.php" class="text-center">Activiteiten</a>
   <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle text-center">Beheerder</a>
@@ -27,15 +27,15 @@
     <div class="knopsidebar text-center"> 
     <button type="button" class="btn btn-primary my-1   text-center">uitloggen</button> <br>
     <button type="button" class="btn btn-primary my-1   text-center">wijzigingen opslaan</button>
-</div>
-    <div class="knopsidebar text-center">
+
+   
         
     
     <button type="button" class="btn btn-primary my-1 text-center">inloggen</button><br> 
     <button type="button" class="btn btn-primary my-1 text-center">aanmelden</button> 
-
-
     </div>
+
+    
 
    
 </div>
