@@ -1,7 +1,7 @@
 <?php
 
-include "header.php";
-include "nav.php";
+
+//include "nav.php";
 include "processen/class_view_sponsor.php";
 include_once "processen/class_sponsor.php";
 
@@ -13,37 +13,54 @@ if (isset($_POST['deleteSponsor'])){
 }
 ?>
 
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>sponsoren</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    -->
+    <script src="https://kit.fontawesome.com/f2c75c26a9.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style_sponsorenpage.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon1.png">
+  </head>
+  <body>
+ 
+
 <!--SPONSOREN OVERZICHT-->
 <div class="content">
-<div class="container-fluid padding">
-    <div class="row text-center">
-        <div class="col-12 my-5">
-            <h1 class="display-4">Meet the sponsors</h1>
+    <div class="container-fluid ">
+        <div class="row text-center">
+            <div class="col-12 ">
+                <h1 class="display-4">Meet the sponsors</h1>
+            </div>
         </div>
-        
+    
+        <p class="test">haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaai</p>
+    
+
+    <!--TWO COLUMN SECTION sponsoren-->
+    <div id="sponsors">
+        <?php
+            $sponsor = new view();
+            $sponsor->getallSponsors();
+        ?>
     </div>
 </div>
 
 
-
-<!--TWO COLUMN SECTION sponsoren-->
-<div id="sponsors">
-    <?php
-        $sponsor = new view();
-        $sponsor->getallSponsors();
-    ?>
-</div>
-
-
-</div>
-
-
-
-
-
-
+ 
 
 <?php
 
 include "footer.php";
 ?>
+    
+</div>

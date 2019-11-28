@@ -1,3 +1,18 @@
+body{
+  overflow-x: hidden;
+  font-family: 'Open Sans Condensed', sans-serif;
+  background-color: red;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  }
+
+  .content {
+    margin-left: 250px;
+    padding: 0px 0px;
+    background-color: red;
+}
 i {
 
     color: #013220;
@@ -7,5 +22,21 @@ i {
 
 h1{
     font-size: 40px;
+    color: black;
     font-family: 'Neucha', cursive;
+}
+
+.test {
+  color: black;
+}
+
+/*FOOTER*/
+footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width:100%;
+  background-color: #013220;
+  color: white;
+  text-align: center;
 }

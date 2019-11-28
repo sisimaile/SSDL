@@ -18,7 +18,6 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style_navbar.css">
-    
     <link rel="shortcut icon" type="image/png" href="images/favicon1.png">
   </head>
   <body>
