@@ -32,6 +32,7 @@ include 'processen/ViewPagina.php';
     <div class="row my-5">
         <div class="col-md-12 col-lg-6 ">
             <h2 class="display-3">Stichting Save the Dutch Leprechaun...</h2>
+            
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis asperiores nemo fugit nostrum repellat cumque quisquam vero? 
                 Nihil laudantium pariatur atque, dolor recusandae error eum? In ipsam, quia eos ipsa officiis, ad corrupti error ratione 
                 porro odio laudantium reiciendis consequatur aliquam nihil delectus tempora. Sapiente blanditiis nostrum incidunt dolore ex.</p>
