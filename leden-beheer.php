@@ -13,15 +13,7 @@ if (isset($_POST['liddelete'])){
 
 ?>
 
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <title>Leden beheer</title>
-</head>
-</html>
 
-<body>
 <section id="pagina-lijst">
     <?php
     $paginas = new ViewLid();

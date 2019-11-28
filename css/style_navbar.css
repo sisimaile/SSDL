@@ -1,0 +1,62 @@
+/* The side navigation menu */
+  .navbar-brand i{
+    color: #013220;
+    font-size: 4em;
+  }
+
+  #fafaicon:hover {
+      color: white;
+      font-size: 4em;
+      background-color:#013220 ;
+  }
+  
+  .sidebar {
+      margin: 0;
+      padding: 0;
+      width: 250px;
+      background-color: white;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+    }
+    
+    /* Sidebar links */
+    .sidebar a {
+      display: block;
+      color: black;
+      padding: 16px;
+      text-decoration: none;                                                                                                    
+      font-size: 20px;
+    }
+ 
+    .knopsidebar button {
+      color: white;
+      width: 50%;
+      background: #013220;
+    
+      padding: 5px;
+      font-size: 18px;
+       margin: 12px 0;
+    }
+
+    .knopsidebar button:hover {
+      color: #013220;
+      width: 50%;
+      background: none;
+      border: 2px solid #013220;
+      padding: 5px;
+      font-size: 18px;
+       margin: 12px 0;
+    }
+
+    /* Active/current link */
+    .sidebar a.active {
+      background-color: none;
+      text-decoration: underline #013220;
+    }
+    
+    /* Links on mouse-over */
+    .sidebar a:hover:not(.active) {
+      background-color: #013220;
+      color: white;
+    }

@@ -1,6 +1,6 @@
 <?php
 
-include "header.php";
+
 include "nav.php";
 
 include 'processen/Connection.php';
@@ -8,6 +8,25 @@ include 'processen/Pagina.php';
 include 'processen/ViewPagina.php';
 ?>
 
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>SSDL</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <script src="https://kit.fontawesome.com/f2c75c26a9.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style_homepage.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon1.png">
+  </head>
+  <body>
+ 
 
 <div class="content">  <!--Houd sidebar apart-->
 <!--FIXED BACKGROUND-->
@@ -84,7 +103,7 @@ include 'processen/ViewPagina.php';
 <div class="container-fluid">
     <div class="row two-column">
         <div class="col-md-12 col-lg-6 two-column-section1 ">
-            <h1>Lorem ipsum dolor sit...</h1>
+            <h1>Doe je ook mee aan de sponsorloop?</h1>
             
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis asperiores nemo fugit nostrum repellat cumque quisquam vero? 
                 Nihil laudantium pariatur atque, dolor recusandae error eum? In ipsam, quia eos ipsa officiis, ad corrupti error ratione 

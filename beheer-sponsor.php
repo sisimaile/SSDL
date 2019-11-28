@@ -3,9 +3,9 @@ include "processen/Connection.php";
 include "header.php";
 include "processen/class_sponsor.php";
 include "processen/class_view_sponsor.php";
+include "nav.php";
 
 
-//include "nav.php";
 
 
 if(isset($_POST['sponsortoevoegen'])) {
@@ -21,7 +21,6 @@ if(isset($_POST['sponsortoevoegen'])) {
 
     $nieuweSponsor = new Sponsor;
     $nieuweSponsor->sponsor_toevoegen ($naam_sponsor, $email_sponsor, $telefoon_sponsor, $overde_sponsor, $plaats_sponsor, $straat_sponsor, $huisnummer_sponsor, $postcode_sponsor, $afbeelding_sponsor );
-   
     
 }
 
@@ -104,5 +103,5 @@ $check->viewSponsor();
 
 <?php
 
-//include "footer.php";
+include "footer.php";
 ?>
