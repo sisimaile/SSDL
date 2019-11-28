@@ -9,7 +9,7 @@ include 'processen/ViewPagina.php';
 ?>
 
 
-<div class="content">  <!--Houd overige apart-->
+<div class="content">  <!--Houd sidebar apart-->
 <!--FIXED BACKGROUND-->
 
     <div class="fixed-wrap0">
@@ -22,10 +22,6 @@ include 'processen/ViewPagina.php';
         </div>
     </div>
    
-
-
-
-
 
 <!--TWO COLUMN SECTION ABOUT US-->
             
@@ -40,14 +36,13 @@ include 'processen/ViewPagina.php';
             <br>
             <a href="#" class="btn btn-primary">meer over ons</a>
         </div>
-        <div class="col-lg-6">
-          
+        <div class="col-lg-6">       
         </div>
     </div>
 </div>
 
 
-<div class="my-4"></div>
+<div class="my-3"></div>
 
 <!--THREE COLUMN SECTION LEER DE KABOUTER KENNEN-->
 <div class="container leer-de-kabouter-kennen ">
@@ -84,8 +79,6 @@ include 'processen/ViewPagina.php';
     </div>
 
 
-
-
 <!--TWO COLUMN SECTION ACTIVITEITENN-->
 
 <div class="container-fluid">
@@ -104,7 +97,7 @@ include 'processen/ViewPagina.php';
         </div>
     </div>
     </div>
-</div>
+
 
 <?php
 $paginas = new ViewPagina();
@@ -168,7 +161,7 @@ $paginas->showAllPaginasTitel();
     </div>
 </div>
 
-
+</div>
 
 <?php
 include "footer.php";

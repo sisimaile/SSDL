@@ -5,7 +5,7 @@
 ?>
 
 
-<footer class="footer">
+<footer class="footer content">
   <div class="container-fluid">
     <div class="row text-center">
       
