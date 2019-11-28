@@ -27,7 +27,6 @@ body{
       position: fixed;
       height: 100%;
       overflow: auto;
-  
     }
     
     /* Sidebar links */
@@ -63,7 +62,6 @@ body{
     .sidebar a.active {
       background-color: none;
       text-decoration: underline #013220;
-     
     }
     
     /* Links on mouse-over */
@@ -107,9 +105,6 @@ body{
     font-weight: 500;
     text-transform: uppercase;
   }
-
- 
-
   
   /*--TWO COLUMN SECTION ABOUT US*/
   .home-over-ons{
@@ -167,7 +162,8 @@ body{
 
 
      /*FIXED BACKGROUND2 */
-    .fixed-wrap {
+   
+     .fixed-wrap {
       position: relative;
       text-align: center;
       padding: 0px;
@@ -189,15 +185,12 @@ body{
   
     .two-column-section1{
        background-color: white;
-       
        padding: 30px;
        margin: 0px;
-   
     }
      
     .two-column-section1 h1 {
-      font-family: 'Neucha', cursive;
-      
+      font-family: 'Neucha', cursive; 
       vertical-align: middle;
       color: #013220;
     }
@@ -205,8 +198,7 @@ body{
     .two-column-section1 p {
       font-size: 2em;
       color: #013220;
-      margin: 0px;
-      
+      margin: 0px;     
     }
 
     .two-column-section1 a{
@@ -215,8 +207,6 @@ body{
        width: 40%;
       padding: 5px;
       font-size: 18px;
-      
-
     }
 
     .two-column-section1 a:hover{
@@ -226,8 +216,6 @@ body{
       border: 1px solid #013220;
       padding: 5px;
       font-size: 18px;
-   
-
     }
   
     .two-column-section2  {
@@ -253,11 +241,11 @@ body{
 
     .sponsorenkennen1 button{
       color: white;
-       background: #013220;
-       width: 30%;
+      background: #013220;
+      width: 30%;
       padding: 5px;
       font-size: 18px;
-       margin: 30px 10px;
+      margin: 30px 10px;
     }
 
     .sponsorenkennen1 button:hover{

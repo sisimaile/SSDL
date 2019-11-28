@@ -76,7 +76,7 @@ include 'processen/ViewPagina.php';
 
 <!--FIXED BACKGROUND2-->
 
-    <div class="fixed-wrap ">
+<div class="fixed-wrap ">
         <div id="fixed">
             <img src="images/img3.jpg" alt="" class="img-fluid">
             <h3 class="display-4 text-center centered-fixedbackground2">Lorem ipsum dolor sit amet.</h3>
@@ -85,7 +85,9 @@ include 'processen/ViewPagina.php';
 
 
 
+
 <!--TWO COLUMN SECTION ACTIVITEITENN-->
+
 <div class="container-fluid">
     <div class="row two-column">
         <div class="col-md-12 col-lg-6 two-column-section1 ">
@@ -101,6 +103,7 @@ include 'processen/ViewPagina.php';
             <img src="images/img1.jpg" class="img-fluid" alt="">
         </div>
     </div>
+    </div>
 </div>
 
 <?php
@@ -109,9 +112,9 @@ $paginas->showAllPaginasTitel();
 ?>
 
 
-
 <!--SPONSOREN-->
-<div class="container-fluid padding">
+
+<div class="container-fluid ">
     <div class="row titelleersponsorenkennen text-center">
         <div class="col-12">
             <h1 class="display-4">Leer onze sponsoren kennen</h1>
@@ -151,8 +154,9 @@ $paginas->showAllPaginasTitel();
 </div>
 
 
+
 <!--WIST U DAT TEXT-->
-<div class="container-fluid ">
+<div class="container-fluid">
     <div class="row jumbotron wistudat">
         <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
             <h1 class="display-4">Wist u dat?</h1>
