@@ -1,0 +1,90 @@
+body{
+    overflow-x: hidden;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+  
+  }
+
+
+  div.content {
+    margin-left: 250px;
+    padding: 0px 0px;
+    height: 1000px;
+}
+.welkom-over-ons {
+    color: white;
+    background-color: #013220;
+    padding: 30px;
+}
+
+
+.info-over-ons{
+    padding: 30px;
+}
+
+.info-over-ons1{
+    
+    font-size: 1.3em;
+ }
+
+.info-over-ons2  button{
+    color: white;
+    width: 50%;
+    background: #013220;
+    padding: 5px;
+    font-size: 18px;
+     margin: 12px 0;
+
+}
+
+.info-over-ons2  button:hover {
+    color: #013220;
+    width: 50%;
+    background: none;
+    border: 2px solid #013220;
+    padding: 5px;
+    font-size: 18px;
+     margin: 12px 0;
+  }
+
+
+.info-over-ons3{
+   
+   
+}
+
+.info-over-ons3 button{
+    color: white;
+    width: 50%;
+    background: #013220;
+  
+    padding: 5px;
+    font-size: 18px;
+     margin: 12px 0;
+}
+
+
+.info-over-ons3  button:hover {
+    color: #013220;
+    width: 50%;
+    background: none;
+    border: 2px solid #013220;
+    padding: 5px;
+    font-size: 18px;
+     margin: 12px 0;
+  }
+.contact-over-ons{
+    padding: 30px;
+}
+
+.contact-over-ons1 p{
+    font-size: 20px;
+    text-decoration: underline  #013220 ;
+}
+
+.contact-over-ons1 i{
+    font-size:2em;
+}

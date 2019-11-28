@@ -3,12 +3,20 @@ body{
     font-family: 'Open Sans Condensed', sans-serif;
     margin: 0px;
     padding: 0px;
+    height: 100%;
+    width: 100%;
   
   }
   /* The side navigation menu */
   .navbar-brand i{
     color: #013220;
     font-size: 4em;
+  }
+
+  #fafaicon:hover {
+      color: white;
+      font-size: 4em;
+      background-color:#013220 ;
   }
   
   .sidebar {
@@ -19,6 +27,7 @@ body{
       position: fixed;
       height: 100%;
       overflow: auto;
+  
     }
     
     /* Sidebar links */
@@ -26,47 +35,56 @@ body{
       display: block;
       color: black;
       padding: 16px;
-      text-decoration: none;
+      text-decoration: none;                                                                                                    
       font-size: 20px;
     }
-    
-    .knop button{
+ 
+    .knopsidebar button {
       color: white;
       width: 50%;
       background: #013220;
+    
+      padding: 5px;
+      font-size: 18px;
+       margin: 12px 0;
+    }
+
+    .knopsidebar button:hover {
+      color: #013220;
+      width: 50%;
+      background: none;
       border: 2px solid #013220;
       padding: 5px;
       font-size: 18px;
-      border-radius: 0px;
-      margin: 12px 0;
-
+       margin: 12px 0;
     }
 
     /* Active/current link */
     .sidebar a.active {
-      background-color: #4CAF50;
-      color: white;
+      background-color: none;
+      text-decoration: underline #013220;
+     
     }
     
     /* Links on mouse-over */
     .sidebar a:hover:not(.active) {
-      background-color: #555;
+      background-color: #013220;
       color: white;
     }
     
     /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
-  
-    
-  .landing .home-wrap .home-inner{
-    background-image: url(images/img3.jpg) blue;
+    div.content {
+      margin-left: 250px;
+      padding: 0px 0px;
+      height: 1000px;
   }
-  
+                              
   .fixed-wrap0 {
     position: relative;
     text-align: center;
     padding: 0px;
-     margin: 0px;
-    
+    margin: 0px;
+     
   }
   
   .centered0{
@@ -76,87 +94,171 @@ body{
     transform: translate(-50%, -50%);
     color: white;
   }
-  
-  .caption h1{
-    font-size: 3.8rem;
-    font-weight: 700;
+
+  .centered0 h1{
+    color: white;
+    font-size: 500%;
+    text-transform: uppercase;
   }
-  
-  .caption h3{
-    font-size: 2em;
+
+  .centered0 h3{
+    color: white;
+    font-size: 200%;
+    font-weight: 500;
+    text-transform: uppercase;
   }
+
+ 
+
   
-  div.content {
-      margin-left: 250px;
-      padding: 0px 0px;
-      height: 1000px;
-  }
-  
-  .over-ons {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 10px 10px;
+  /*--TWO COLUMN SECTION ABOUT US*/
+  .home-over-ons{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
     font-size: 20px;
   }
+
+    /*LEER DE KABOUTER KENNEN*/
+
+    .leer-de-kabouter-kennen i {
+      color: #013220;
+      font-size: 5em;
+      margin: 1rem;
+    }
   
-     /*backgroundimage SECTION ACTIVITIES */
+    .leer-de-kabouter-kennen h1{
+      font-size: 4em;
+      margin: 2rem 1rem;
+    }
+  
+    .leer-de-kabouter-kennen h3 {
+      color: #013220;
+      font-size: 2em;
+        margin: 1rem;
+    }
+  
+    .leer-de-kabouter-kennen p{
+      font-size: 20px;
+    }
+
+  
+
+
+     /*FIXED BACKGROUND2 */
     .fixed-wrap {
       position: relative;
       text-align: center;
       padding: 0px;
        margin: 0px;
-      
+
     }
   
-    .centered {
+    .centered-fixedbackground2 {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       color: white;
     }
+
+
     /*TWO COLUMN SECTION ACTIVITIES */
     
   
     .two-column-section1{
        background-color: #013220;
-       color: white;
+       color: black;
        padding: 0px;
        margin: 0px;
-      
    
     }
-  
-    .two-column-section2  {
-      padding: 0px;
-      margin: 0px;
-    
-    }
-  
-    .two-column h2 {
+     
+    .two-column-section1 h1 {
       font-family: 'Neucha', cursive;
       letter-spacing: 0.4em;
       text-align: center;
       vertical-align: middle;
       line-height: 90px;
     }
-    
-    .three-column i {
-      color: #013220;
-      font-size: 4em;
-      margin: 1rem;
+
+    .two-column-section1 h1 {
+      letter-spacing: 0.4em;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 90px;
     }
-    /*GET TO KNOW THE SPONSORS*/
+
+    .two-column-section1 a{
+      color: white;
+      width: 50%;
+      background: #013220;
+    
+      padding: 5px;
+      font-size: 18px;
+       margin: 12px 0;
+
+    }
+
+    .two-column-section1 a:hover{
+      color: #013220;
+      width: 50%;
+      background:white;
+      border: 1px solid #013220;
+      padding: 5px;
+      font-size: 18px;
+       margin: 12px 0;
+
+    }
   
+    .two-column-section2  {
+      padding: 0px;
+      margin: 0px;
+    }
+ 
+    /*GET TO KNOW THE SPONSORS*/
+    .titelleersponsorenkennen{
+      color: black;
+      font-size: 3em;
+    }
     .sponsorenkennen i {
       color: #013220;
       font-size: 5em;
       margin: 1rem;    
     }
+
+    .sponsorenkennen button{
+      color: white;
+       background: #013220;
+      padding: 5px;
+      font-size: 18px;
+       margin: 30px 10px;
+    }
+
+    .sponsorenkennen button:hover{
+      color: #013220;
+       background: white;
+      padding: 5px;
+      font-size: 18px;
+       margin: 30px 10px;
+    }
+
+
+   /*WIST U DAT SECTION*/
+   .wistudat {
+    padding: 1rem;
+    border-radius: 0px;
+  }
+
+  .wistudat p{
+    font-size:150%;
+  }
+
+
     
     /*FOOTER*/
     .footer {
-      /*position: fixed;*/
+      position: fixed;
       left: 0;
       bottom: 0;
       width: 100%;
