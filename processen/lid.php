@@ -6,7 +6,7 @@ class lid extends Connection
 {
     protected function getAllleden()
     {
-        $sqlselectallleden = "SELECT * FROM `lidgegevens` WHERE `Lid_rol` = 'lid'";
+        $sqlselectallleden = "SELECT * FROM `lidgegevens` WHERE `Lid_rol` = 'lid' OR `Lid_rol` = 'deelnemer'";
         $result = $this->connect()->query($sqlselectallleden);
         $numRows = $result->num_rows;
 
@@ -160,6 +160,34 @@ class lid extends Connection
 
         }
 
+    }
+
+    public function getallledenid($fkledenid){
+        if (!empty($fkledenid)) {
+            $sqlgetlidid = "SELECT `Lid_ID` FROM `lid` WHERE `FK_lidgegevens_ID` = '$fkledenid'";
+            $resultgetlidid = $this->connect()->query($sqlgetlidid);
+            while ($row = $resultgetlidid->fetch_assoc()) {
+                $data[] = $row;
+            }
+
+            return $data;
+        } else {
+            echo 'error';
+        }
+    }
+
+    public function getallactiviteiten($lidid)
+    {
+        if (!empty($lidid)) {
+            $sqlgetactiviteiten = "SELECT * FROM `deelnemer` WHERE `FK_Lid_ID` = '$lidid'";
+            $resultgetactiviteiten = $this->connect()->query($sqlgetactiviteiten);
+
+            $numRows = $resultgetactiviteiten->num_rows;
+
+            return $numRows;
+        } else {
+
+        }
     }
 
 }
