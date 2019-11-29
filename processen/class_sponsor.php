@@ -8,7 +8,7 @@ class Sponsor extends Connection {
 
         if (!empty($naam_sponsor) && !empty($email_sponsor) && !empty($telefoon_sponsor) && !empty($overde_sponsor) &&!empty($plaats_sponsor) &&!empty($straat_sponsor) && !empty($huisnummer_sponsor) && !empty($postcode_sponsor) && !empty($afbeelding_sponsor)){
 
-            $sqlsponsornaamcheck = "SELECT * FROM `lidgegevens` WHERE `Lid_gebruikersnaam` = '$naam_sponsor'";
+            $sqlsponsornaamcheck = "SELECT * FROM `lidgegevens` WHERE `Lid_gebruikersnaam` = '$naam_sponsor' AND `Lid_rol` = 'sponsor'";
             $result = $this->connect()->query($sqlsponsornaamcheck);
             $results = $result->num_rows;
 

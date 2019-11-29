@@ -5,7 +5,7 @@ class viewActivity extends ActivityValidator {
     public function showAllActivities () {
         $datas = $this->retrieveactivity();
         foreach ($datas as $data) {
-            echo "<div class='col-md-4'>
+            echo "<div class='col-md-3'>
                   <div class='card' style='width: 18rem;'>
                     <img src= 'images/" . $data['Activiteit_image'] . "' class='card-img-top' alt='...'>
                     <div class='card-body'>
@@ -26,8 +26,18 @@ class viewActivity extends ActivityValidator {
                             <input type='hidden' name='id' value='" . $data['Activiteit_ID'] . "'>
                         </form>
                     </div>
+                    <div>
+                        <form action='activiteiten-aanmelden.php' method='post'>
+                            <input type='submit' value='aanmelden' name='aanmelden'>
+                            <input type='hidden' name='id' value='" . $data['Activiteit_ID'] . "'>
+                        </form>
+                        "; $activiteitid = $data['Activiteit_ID'];
+                            $aantaldeelnemers = $this->getallDeelnemers($activiteitid);
+                            echo 'aantal deelnemers: ' . $aantaldeelnemers . "
+                    </div>
                     </div>
                 </div>";
+
         }
     }
 

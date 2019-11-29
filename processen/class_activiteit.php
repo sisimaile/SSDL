@@ -176,5 +176,18 @@ Class ActivityValidator extends Connection {
             header("Location: activiteiten-overzichtpage.php?niet-alles-is-ingevuld");
         }
     }
+
+    public function getallDeelnemers($activiteitid){
+        if (!empty($activiteitid)){
+            $sqlgetdeelnemers = "SELECT * FROM `deelnemer` WHERE `FK_Activiteit_ID` = '$activiteitid'";
+            $resultgetdeelnemers = $this->connect()->query($sqlgetdeelnemers);
+            $numRows = $resultgetdeelnemers->num_rows;
+
+            return $numRows;
+
+        }else{
+            echo 'error';
+        }
+    }
 }
 
