@@ -1,7 +1,7 @@
 body{
   overflow-x: hidden;
   font-family: 'Open Sans Condensed', sans-serif;
-  background-color: red;
+  background-color: white;
   margin: 0px;
   padding: 0px;
   height: 100%;
@@ -24,6 +24,10 @@ h1{
     font-size: 40px;
     color: black;
     font-family: 'Neucha', cursive;
+}
+
+p {
+  color: yellow;
 }
 
 .test {

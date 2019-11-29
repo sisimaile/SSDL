@@ -27,19 +27,22 @@ include_once "processen/ViewPagina.php";
   <body>
  
 
-<div class="content">  <!--Houd sidebar apart-->
+<div class="content">  
 <!--FIXED BACKGROUND-->
 
     <div class="fixed-wrap0">
         <div id="fixed">
-            <?php
-                $titel = $_GET['pagina'];
-                $datas = new ViewPagina();
-                $datas->showhomePagina($titel);
-            ?>
+            <img src="images/img5.jpg" class="img-fluid" alt="">
         </div>
     </div>
    
+
+    <?php
+         $titel = $_GET['pagina'];
+         $datas = new ViewPagina();
+         $datas->showhomePagina($titel);
+    ?>
+
 
 <!--TWO COLUMN SECTION ABOUT US-->
             
@@ -172,6 +175,8 @@ include_once "processen/ViewPagina.php";
         </div>
     </div>
 </div>
+
+
 
 </div>
 
