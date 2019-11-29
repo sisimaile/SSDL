@@ -2,10 +2,9 @@
 
 
 include "nav.php";
+include_once "processen/Pagina.php";
+include_once "processen/ViewPagina.php";
 
-include 'processen/Connection.php';
-include 'processen/Pagina.php';
-include 'processen/ViewPagina.php';
 ?>
 
 <!doctype html>
@@ -33,11 +32,11 @@ include 'processen/ViewPagina.php';
 
     <div class="fixed-wrap0">
         <div id="fixed">
-            <img src="images/img2a.jpg" alt="" class="img-fluid">
-                <div class="centered0">
-                <h1 class="display-2">Bedankt!</h1>
-                <h3>De kabouter is u dankbaar!</h3>
-                </div>
+            <?php
+                $titel = $_GET['pagina'];
+                $datas = new ViewPagina();
+                $datas->showhomePagina($titel);
+            ?>
         </div>
     </div>
    
@@ -116,12 +115,6 @@ include 'processen/ViewPagina.php';
         </div>
     </div>
     </div>
-
-
-<?php
-$paginas = new ViewPagina();
-$paginas->showAllPaginasTitel();
-?>
 
 
 <!--SPONSOREN-->

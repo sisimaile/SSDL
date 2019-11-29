@@ -3,11 +3,10 @@
 
 //include "nav.php";
 
-include 'processen/Connection.php';
 include 'processen/class_activiteit.php';
 include 'processen/viewActivity.php';
 
-if (isset($_POST['activiteitdelete'])){
+if (isset($_POST['activiteitdelete'])) {
     $activiteitid = $_POST['id'];
 }
     ?>
@@ -53,8 +52,13 @@ if (isset($_POST['activiteitdelete'])){
 <?php
     $activiteit = new ActivityValidator();
     $activiteit->deleteActiviteit($activiteitid);
-
 ?>
+  <?php
+    $titel = $_GET['pagina'];
+
+    $pagina = new ViewPagina();
+    $pagina->showactiviteitenPagina($titel)
+  ?>
 
             <div class="container">
                 <div class="row">
@@ -72,3 +76,4 @@ if (isset($_POST['activiteitdelete'])){
 <?php
 include "footer.php";
 ?>
+  </body>

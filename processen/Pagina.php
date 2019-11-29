@@ -19,8 +19,21 @@ class Pagina extends Connection
         }
     }
 
-    protected function getOnePagina($id){
-        $sqlonepagina = "SELECT * FROM `pagina` WHERE `Pagina_ID` = '$id'";
+    public function getOnePagina($id){
+    $sqlonepagina = "SELECT * FROM `pagina` WHERE `Pagina_ID` = '$id'";
+    $result = $this->connect()->query($sqlonepagina);
+    $numRows = $result->num_rows;
+
+        if ($numRows > 0){
+            while ($row = $result->fetch_assoc()){
+                $data[] = $row;
+            }
+            return $data;
+        }
+    }
+
+    public function getOnePaginatitel($titel){
+        $sqlonepagina = "SELECT * FROM `pagina` WHERE `Pagina_titel` = '$titel'";
         $result = $this->connect()->query($sqlonepagina);
         $numRows = $result->num_rows;
 

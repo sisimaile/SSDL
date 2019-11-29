@@ -1,6 +1,9 @@
 
 <?php
 
+include 'processen/Connection.php';
+include 'processen/Pagina.php';
+include 'processen/ViewPagina.php';
 
 ?>
 <!doctype html>
@@ -22,14 +25,30 @@
   </head>
   <body>
 <div class="sidebar">
-    <div class="sidebar-header">   
-        <a class="navbar-brand text-center" href="homepage.php">
-            <i class="fas fa-leaf" id="fafaicon"></i>
-        </a>      
+    <div class="sidebar-header">
+        <form action="homepage.php" method="get">
+            <button type="submit" class="btn btn-secondary my-1 text-center">
+                <i class="fas fa-leaf" id="fafaicon"></i>
+            </button>
+            <input type="hidden" value="home" name="pagina">
+        </form>
     </div>
-  <a href="over-ons.php" class="text-center">Over ons</a>
-  <a href="sponsorenpage.php" class="text-center">Sponsoren</a>
-  <a href="activiteiten-overzichtpage.php" class="text-center">Activiteiten</a>
+    <form action="over-ons.php" method="get">
+        <button type="submit">Over-ons</button>
+        <input type="hidden" value="over-ons" name="pagina">
+    </form>
+    <form action="sponsorenpage.php" method="get">
+        <button type="submit">Sponsoren</button>
+        <input type="hidden" value="sponsoren" name="pagina">
+    </form>
+    <form action="activiteiten-overzichtpage.php" method="get">
+        <button type="submit">Activiteiten</button>
+        <input type="hidden" value="activiteiten" name="pagina">
+    </form>
+    <?php
+        $pagelink = new ViewPagina();
+        $pagelink->showAllPaginasTitel();
+    ?>
   <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle text-center">Beheerder</a>
                 <ul class="collapse list-unstyled" id="pageSubmenu">
                     <li>

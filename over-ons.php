@@ -1,6 +1,7 @@
 <?php
 
 include "nav.php";
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -29,7 +30,9 @@ include "nav.php";
 
 <div class="container-fluid geenpadding ">
 
-
+    <?php
+        $titel = $_GET['pagina'];
+?>
     <div class="row welkom-over-ons">
         <div class="col welkom-over-ons1 text-center">
             <h1>Welkom</h1>
@@ -81,6 +84,9 @@ include "nav.php";
         </div>
  </div>
  </div>
+        $pagina = new ViewPagina();
+        $pagina->showoveronspagina($titel);
+    ?>
 
  <div class="container">
  <div class="row contact-over-ons">

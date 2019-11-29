@@ -1,9 +1,11 @@
 <?php
 
 
-//include "nav.php";
+include "nav.php";
 include "processen/class_view_sponsor.php";
 include_once "processen/class_sponsor.php";
+include_once "processen/ViewPagina.php";
+include_once "processen/Pagina.php";
 
 if (isset($_POST['deleteSponsor'])){
     $sponsorid = $_POST['id'];
@@ -37,13 +39,13 @@ if (isset($_POST['deleteSponsor'])){
 <!--SPONSOREN OVERZICHT-->
 <div class="content">
     <div class="container-fluid ">
-        <div class="row text-center">
-            <div class="col-12 ">
-                <h1 class="display-4">Meet the sponsors</h1>
-            </div>
-        </div>
-    
-        <p class="test">haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaai</p>
+
+        <?php
+        $titel = $_GET['pagina'];
+
+        $pagina = new ViewPagina();
+        $pagina->showsponsorPagina($titel)
+        ?>
     
 
     <!--TWO COLUMN SECTION sponsoren-->

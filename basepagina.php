@@ -2,9 +2,8 @@
 include "header.php";
 include "nav.php";
 
-include 'processen/Connection.php';
-include 'processen/Pagina.php';
-include 'processen/ViewPagina.php';
+include_once 'processen/Pagina.php';
+include_once 'processen/ViewPagina.php';
 
 ?>
 
