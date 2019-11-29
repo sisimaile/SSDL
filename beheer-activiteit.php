@@ -2,7 +2,7 @@
 include "processen/Connection.php";
 require("processen/class_activiteit.php");
 //include "test/viewActivity.php";
-//include "header.php";
+
 include "nav.php";
 
 
@@ -36,9 +36,9 @@ if(isset($_POST["activiteittoevoegen"])) {
 <!--ACTIVITEIT TOEVOEGEN-->
 <div class="content ">
 
-<div class="row ">
+<div class="row">
     <div class="col">
-        <h1 class="titelpagina">Voeg een activiteit toe</h1>
+        <h1 class="titelpagina my-5">Voeg een activiteit toe</h1>
     </div>
 </div>
 
@@ -110,6 +110,10 @@ if(isset($_POST["activiteittoevoegen"])) {
    <button type="submit" name="activiteittoevoegen" class="btn btn-primary knop-activiteit-toevoegen">activiteit toevoegen</button>
 </form>
 </div>
+</div>
+
+<div class="row">
+    <div class="col my-5"></div>
 </div>
 <?php
 /*

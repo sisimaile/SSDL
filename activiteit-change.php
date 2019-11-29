@@ -3,7 +3,7 @@
 include 'processen/Connection.php';
 include 'processen/class_activiteit.php';
 include 'processen/viewActivity.php';
-
+//include "nav.php";
 
 if (isset($_POST['activiteitchange'])){
     $activiteitID = $_POST['id'];
@@ -20,16 +20,25 @@ if (isset($_POST['activiteitchange'])){
 }
 
 ?>
+  <!doctype html>
+<html lang="en">
+  <head>
+    <title>Change activiteit</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!DOCTYPE html>
-    <html lang="nl">
-    <head>
-        <meta charset="UTF-8">
-        <title>Change activiteit</title>
-    </head>
-    </html>
-
-    <body>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <script src="https://kit.fontawesome.com/f2c75c26a9.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style_activiteit-change.css">
+    
+    <link rel="shortcut icon" type="image/png" href="images/favicon1.png">
+  </head>
+  <body>
 <section id="pagina-content">
     <h3>Huidige gegevens</h3>
     <?php
