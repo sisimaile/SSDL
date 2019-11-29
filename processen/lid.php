@@ -37,7 +37,7 @@ class lid extends Connection
     public function addLid($username, $password, $passwordcheck, $email, $telefoonnummer, $plaats, $adres){
         if (!empty($username) && !empty($password) && !empty($passwordcheck) && !empty($email) &&!empty($telefoonnummer) &&!empty($plaats) && !empty($adres)){
 
-            $sqlgebruikersnaamcheck = "SELECT * FROM `lidgegevens` WHERE `Lid_gebruikersnaam` = '$username'";
+            $sqlgebruikersnaamcheck = "SELECT * FROM `lidgegevens` WHERE `Lid_gebruikersnaam` = '$username' AND `Lid_rol` = 'lid'";
             $result = $this->connect()->query($sqlgebruikersnaamcheck);
             $results = $result->num_rows;
 
@@ -100,6 +100,66 @@ class lid extends Connection
         }else{
             echo "niet alle velden zijn ingevuld";
         }
+    }
+
+    public function addDeelnemer($naam, $email, $telefoonnummer, $plaats, $adres, $activiteitid){
+        var_dump($naam, $email, $telefoonnummer, $plaats, $adres, $activiteitid);
+        if (!empty($naam) && !empty($email) &&!empty($telefoonnummer) &&!empty($plaats) && !empty($adres)){
+
+            $sqlgebruikersnaamcheck = "SELECT * FROM `lidgegevens` WHERE `Lid_gebruikersnaam` = '$naam' AND `Lid_rol` = 'deelnemer'";
+            $result = $this->connect()->query($sqlgebruikersnaamcheck);
+            $results = $result->num_rows;
+
+            if ($results > 0){
+                header("Location: activiteiten-aanmelden.php?gebruikersnaam-bestaat-al");
+            } else {
+
+                $conn = $this->connect();
+                $rol = "deelnemer";
+
+                $sqlaanmeldendeelnemergegevens = "INSERT INTO `lidgegevens` (Lid_gebruikersnaam, Lid_rol) VALUES ('$naam', '$rol')";
+                $resultaanmeldendeelnemergegevens = $conn->query($sqlaanmeldendeelnemergegevens);
+
+                if ($resultaanmeldendeelnemergegevens){
+                    header("Location: activiteiten-aanmelden?pagina=home");
+                } else {
+                    echo "sql error: " . $conn->error;
+                    return;
+                }
+
+                $lastinsertedgegevensID = $conn->insert_id;
+
+                $conn->close();
+                $conn2 = $this->connect();
+
+                $FKlidgegevens = $lastinsertedgegevensID;
+
+                $sqlaanmeldendeelnemer = "INSERT INTO `lid` (Lid_email, Lid_telefoonnummer, Lid_plaats, Lid_adres, FK_lidgegevens_ID) VALUES ('$email', '$telefoonnummer', '$plaats', '$adres', '$FKlidgegevens')";
+                $resultaanmeldendeelnemer = $conn2->query($sqlaanmeldendeelnemer);
+
+                $lastinsertedlidID = $conn2->insert_id;
+
+                $conn2->close();
+                $conn3 = $this->connect();
+
+                $FK_Lid_ID = $lastinsertedlidID;
+
+                $sqlaanmeldendeelnemeractiviteit = "INSERT INTO `deelnemer` (FK_Lid_ID, FK_Activiteit_ID) VALUES ('$FK_Lid_ID', '$activiteitid')";
+                $resultaanmeldendeelnemeractiviteit = $conn3->query($sqlaanmeldendeelnemeractiviteit);
+
+                if ($resultaanmeldendeelnemeractiviteit){
+                    header("Location: homepage.php?pagina=home");
+                } else {
+                    echo "sql error: " . $conn2->error;
+                    return;
+                }
+
+            }
+
+        }else{
+
+        }
+
     }
 
 }

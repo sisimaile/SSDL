@@ -1,7 +1,7 @@
 <?php
 
 
-//include "nav.php";
+include "nav.php";
 
 include 'processen/class_activiteit.php';
 include 'processen/viewActivity.php';
@@ -32,27 +32,7 @@ if (isset($_POST['activiteitdelete'])) {
  
 <!-- Bootstrap CSS -->
 <div class="content">
-    <div class="container ">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="images/img1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Sponsorloop 2019</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">25-11-2019</h6>
-                            <p class="card-text">   Some quick example text to build on the card title and
-                                                    make up the bulk of the card's content.</p>
-                        </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-
-<?php
-    $activiteit = new ActivityValidator();
-    $activiteit->deleteActiviteit($activiteitid);
-?>
   <?php
     $titel = $_GET['pagina'];
 
@@ -62,7 +42,7 @@ if (isset($_POST['activiteitdelete'])) {
 
             <div class="container">
                 <div class="row">
-                    <div class="col">
+                    <div class="col-md-4">
                     <?php
                         $activiteit = new viewActivity();
                         $activiteit->showAllActivities();
