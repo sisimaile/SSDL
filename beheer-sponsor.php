@@ -5,7 +5,7 @@ include "processen/class_sponsor.php";
 include "processen/class_view_sponsor.php";
 
 
-//include "nav.php";
+include "nav.php";
 
 
 if(isset($_POST['sponsortoevoegen'])) {
@@ -33,8 +33,6 @@ if(isset($_POST['sponsortoevoegen'])) {
     $nieuweSponsor->afbeelding_sponsor = $afbeelding_sponsor;
 
     $nieuweSponsor->sponsor_toevoegen ($naam_sponsor, $straat_sponsor, $huisnummer_sponsor, $postcode_sponsor, $plaats_sponsor, $land_sponsor, $email_sponsor, $telefoon_sponsor, $overde_sponsor, $afbeelding_sponsor );
-   
-    
 }
 
 ?>
@@ -52,72 +50,74 @@ if(isset($_POST['sponsortoevoegen'])) {
     <script src="https://kit.fontawesome.com/f2c75c26a9.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/.css"> <!-- MOET NOG TOEVOEGEN CSS -->
-    
+    <link rel="stylesheet" type="text/css" href="css/style_beheer-sponsor.css"> 
     <link rel="shortcut icon" type="image/png" href="images/favicon1.png">
   </head>
   <body>
  
 
 <!--SPONSOR TOEVOEGEN-->
-
+<div class="row ">
+    <div class="col bla">
+        <h1>Voeg een sponsor toe</h1>
+    </div>
+</div>
 <div class="content container">
     <form action="<?php echo $_SERVER["PHP_SELF"] ?>" method="POST">
         <div class="form-group ">
-            <label for="naamsponsor">Naam</label>
-            <input type="text" class="form-control" id="naamsponsor" name="naamsponsor" placeholder="Chamomilla" value="">
+            <input type="text" class="form-control" id="naamsponsor" name="naamsponsor" placeholder="Naam" value="">
             <div class="error">
                 <?php //echo $errors['naamsponsor'] ?? '' ?>
             </div>
         </div>
         
         <div class="form-row">
-            <div class=" form-group col-md-6">
-                <label for="straat">Straat</label>
-                <input type="text" class="form-control" id="straat" name="straatsponsor" placeholder="Europalaan">
+            <div class=" form-group col-md-5 mx-1">
+                
+                <input type="text" class="form-control" id="straat" name="straatsponsor" placeholder="Straat">
                 <div class="error">
                     <?php// echo $errors['straatsponsor'] ?? '' ?>
                  </div>
             </div>
-            <div class="form-group col-md-6">
-                <label for="huisnummersponsor">Huisnummer</label>
-                <input type="text" class="form-control" id="huisnummersponsor" name="huisnummersponsor" placeholder="20">
+            <div class="form-group col-md-3 mx-1">
+                
+                <input type="text" class="form-control" id="huisnummersponsor" name="huisnummersponsor" placeholder="Huisnummer">
             </div>
         </div>
 
 
         <div class="form-row">
-            <div class="form-group col-md-4">
-                <label for="postcodeSponsor">postcode</label>
-                <input type="text" class="form-control" id="postcodeSponsor" placeholder="8303 JI" name="postcodeSponsor">
+            <div class="form-group col-md-3 mx-1">
+                
+                <input type="text" class="form-control" id="postcodeSponsor" placeholder="postcode" name="postcodeSponsor">
                 </div>
 
-            <div class="form-group col-md-6">
-                <label for="plaatsSponsor">plaats</label>
-                <input type="text" class="form-control" id="plaatsSponsor" name="plaatsSponsor" placeholder="Emmeloord">
+            <div class="form-group col-md-5 mx-1">
+                
+                <input type="text" class="form-control" id="plaatsSponsor" name="plaatsSponsor" placeholder="plaats">
                 
             </div>
         </div>
         <div class="form-group">
-                <label for="landSponsor">land sponsor</label>
-                <input type="text" class="form-control" id="landSponsor" name="landSponsor">
+                
+                <input type="text" class="form-control" id="landSponsor" name="landSponsor" placeholder="land sponsor">
             </div>
 
 
             <div class="form-group">
-                <label for="emailSponsor">email sponsor</label>
-                <input type="email" class="form-control" id="emailSponsor" name="emailSponsor">
+                
+                <input type="email" class="form-control" id="emailSponsor" name="emailSponsor" placeholder="email sponsor">
             </div>
 
             <div class="form-group">
-                <label for="telefoonSponsor">telefoon sponsor</label>
-                <input type="text" class="form-control" id="telefoonSponsor" name="telefoonSponsor">
+                
+                <input type="text" class="form-control" id="telefoonSponsor" name="telefoonSponsor" placeholder="telefoon sponsor">
             </div>
 
 
         <div class="form-group">
-            <label for="overDeSponsor">over de sponsor</label>
-            <textarea class="form-control" id="overDeSponsor" rows="3" name="overDeSponsor"></textarea>
+            
+            <textarea class="form-control" id="overDeSponsor" rows="3" name="overDeSponsor" placeholder="over de sponsor"></textarea>
         </div>
 
         <div class="form-group">
@@ -125,7 +125,7 @@ if(isset($_POST['sponsortoevoegen'])) {
             <input type="file" id="afbeeldingSponsor" name="afbeeldingSponsor">
         </div>
 
-   <button type="submit" name="sponsortoevoegen" class="btn btn-primary">sponsor toevoegen</button>
+   <button type="submit" name="sponsortoevoegen" class="btn btn-primary knop-sponsor-toevoegen">sponsor toevoegen</button>
 </form>
 </div>
 
@@ -139,5 +139,5 @@ $check->viewSponsor();
 
 <?php
 
-//include "footer.php";
+include "footer.php";
 ?>
