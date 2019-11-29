@@ -16,10 +16,18 @@ position: relative;
 }
 
 .welkom-over-ons {
-    color: white;
-    background-color: #013220;
+    color:  black;
+    background-color: white;
     padding: 30px;
 }
+
+
+.welkom-over-ons h1 {
+  font-size: 40px;
+  font-family: 'Neucha', cursive;
+  border-bottom: 6px solid #013220;
+}
+
 
 
 .info-over-ons{

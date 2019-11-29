@@ -33,7 +33,10 @@ include "nav.php";
     <div class="row welkom-over-ons">
         <div class="col welkom-over-ons1 text-center">
             <h1>Welkom</h1>
-            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis pariatur animi quas assumenda!</h5>
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis pariatur animi quas assumenda!, libero ex reiciendis eaque
+                 magnam porro deleniti exercitationem. Rem quibusdam voluptatum
+                    repellendus nesciunt maiores temporibus? Neque nam eum atque tempora velit ipsam voluptas. Recusandae quaerat
+                    nihil possimus? Commodi odio voluptatem inventore molestiae adipisci </h5>
         </div>
     </div>
 
