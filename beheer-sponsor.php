@@ -37,8 +37,6 @@ if(isset($_POST['sponsortoevoegen'])) {
     
 }
 
-
-
 ?>
 <!doctype html>
 <html lang="en">
