@@ -1,0 +1,73 @@
+body{
+  overflow-x: hidden;
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+h1{
+  float: left;
+font-size: 40px;
+font-family: 'Neucha', cursive;
+border-bottom: 6px solid #013220;
+margin-bottom: 50px;
+margin-left: 250;
+padding: 13px 0px;
+}
+
+
+.form-group{
+  width: 80%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+  border-bottom: 2px solid #013220;
+}
+
+.form-control  {
+  border: none;
+  outline: none;
+  background: none;
+  color: black;
+  font-size: 18px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+
+.knop-sponsor-toevoegen{
+  width: 20%;
+  background: #013220;
+  border: 2px solid #013220;
+  color: white;
+  padding: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 12px 0;
+}
+
+
+.knop-sponsor-toevoegen:hover{
+  width: 20%;
+  background: white;
+  border: 2px solid #013220;
+  color: #013220;
+  padding: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 12px 0;
+}
+
+
+  /*FOOTER*/
+  .footer {
+    /*position: fixed;*/
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #013220;
+    color: white;
+    text-align: center;
+  }
