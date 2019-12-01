@@ -13,15 +13,15 @@ body{
       margin-left: 250px;
       padding: 0px 0px;
   }
-
   
-     /*FOOTER*/
-     footer {
-        position: relative;
-        left: 0;
-        bottom: 0;
-        width:100%;
-        background-color: #013220;
-        color: white;
-        text-align: center;
-      }
+  
+  /*FOOTER*/
+    footer {
+      position: relative;
+      left: 0;
+      bottom: 0;
+      width:100%;
+      background-color: #013220;
+      color: white;
+      text-align: center;
+    }
