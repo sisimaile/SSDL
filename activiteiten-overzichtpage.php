@@ -31,7 +31,11 @@ if (isset($_POST['activiteitdelete'])) {
   <body>
  
 <!-- Bootstrap CSS -->
-<div class="content">
+<div class="row">
+  <div class="col-md-4">
+  <div class="content">
+
+<h1 class="bekijkactiviteitentitel">Bekijk onze activiteiten</h1>
 
   <?php
     $titel = $_GET['pagina'];
@@ -40,7 +44,14 @@ if (isset($_POST['activiteitdelete'])) {
     $pagina->showactiviteitenPagina($titel)
   ?>
 
-            <div class="container">
+           
+
+</div>
+
+  </div>
+</div>
+
+<div class="container">
                 <div class="row">
                     <div class="col-md-4">
                     <?php
@@ -51,7 +62,6 @@ if (isset($_POST['activiteitdelete'])) {
                 </div>
             </div>
 
-</div>
 
 <?php
 include "footer.php";

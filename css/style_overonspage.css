@@ -43,6 +43,7 @@ position: relative;
     color: white;
     width: 50%;
     background: #013220;
+     border: 2px solid #013220;
     padding: 5px;
     font-size: 18px;
      margin: 12px 0;
@@ -64,7 +65,7 @@ position: relative;
     color: white;
     width: 50%;
     background: #013220;
-  
+    border: 2px solid #013220;
     padding: 5px;
     font-size: 18px;
      margin: 12px 0;

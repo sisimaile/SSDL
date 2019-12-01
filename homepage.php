@@ -32,6 +32,10 @@ include_once "processen/ViewPagina.php";
 
     <div class="fixed-wrap0">
         <div id="fixed">
+            <div class="centered0">
+            <h1>Bedankt!</h1>
+            <h3>De kabouter is u dankbaar</h3>
+            </div>
             <img src="images/img5.jpg" class="img-fluid" alt="">
         </div>
     </div>

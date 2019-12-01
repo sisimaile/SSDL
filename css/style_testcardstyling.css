@@ -68,3 +68,18 @@ IS dit op 1 pagina? dan zelfde styling als aanmelden nieuw lid*/
     margin-bottom: 50px;
     padding: 13px 0px;
 }
+
+
+/*ACTIVITEITENPAGINA, ACTIVITEITEN PAGINA FUNCTIE SHOWACTIVITEITENPAGINA*/
+
+.showactiviteitenpPagina-h5 {
+    font-family: 'Neucha', cursive; 
+    color: #013220;
+    border-bottom: 1px solid #013220;
+}
+
+.showactiviteitenpPagina-tekst{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 110%;
+    color: black;
+}

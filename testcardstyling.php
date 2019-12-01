@@ -59,11 +59,11 @@
                     
                     
     
-<div class="card get-all-sponsors" style="width: 18rem;">
+<div class="card get-all-sponsors" style="width: 25rem;">
 <img src="images/' . $sponsor['Lid_logo'] . '" alt="sponsor logo" class="card-img-top">
   <div class="card-body ">
-    <h3 class="card-title get-all-sponsors-title">Card title</h3>
-    <p class="card-text get-all-sponsors-p">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h3 class="card-title get-all-sponsors-title">' . $value['Lid_gebruikersnaam'] . '</h3>
+    <p class="card-text get-all-sponsors-p">' . $sponsor['Lid_tekst'] . '</p>
     <form action="sponsorenpage.php" method="post">
                                     <input type="submit" class="btn btn-primary mx-2" name="deleteSponsor" value="delete sponsor">
                                     <input type="hidden" name="id" value="' . $value['Lidgegevens_ID'] . '"> 
@@ -91,6 +91,96 @@
                             </div>
                         </div>
                     </div>
+
+
+
+<!--ACTIVITEITEN PAGINA FUNCTIE SHOWACTIVITEITENPAGINA-->
+<div class="row">
+    <div class="col">
+            <div class="card" style="width: 25rem;">
+            <div class="card-body showactiviteitenpPagina">
+            <h5 class="card-title showactiviteitenpPagina-h5">Card title</h5>
+            
+            <p class="card-text showactiviteitenpPagina-tekst">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+</div>
+
+
+<!--SHOW ALL ACTIVITIES (op pagina viewActivity)-->
+
+"<div class='col-md-3'>
+                  <div class='card' style='width: 18rem;'>
+                    <img src= 'images/" . $data['Activiteit_image'] . "' class='card-img-top' alt='...'>
+                    <div class='card-body'>
+                        <h5 class='card-title'>" . $data['Activiteit_Naam'] . "</h5>
+                        <h6 class='card-subtitle mb-2 text-muted'>" . $data['Activiteit_Datum'] . "</h6>
+                        <p class='card-text'>" . $data['Activiteit_Beschrijving'] . "</p>
+                        <p class='card-text'>plaats: " . $data['Activiteit_Plaats'] . " - adres: " . $data['Activiteit_Straat'] . " " . $data['Activiteit_Huisnummer'] . " - Postcode: " . $data['Activiteit_Postcode'] . "</p>
+                    </div>
+                    <div>
+                        <form action='activiteit-change.php' method='get'>
+                            <input type='submit' value='change' name='activiteitupdate'>
+                            <input type='hidden' name='id' value='" . $data['Activiteit_ID'] . "'>
+                        </form>
+                    </div>
+                    <div>
+                        <form action='activiteiten-overzichtpage.php' method='post'>
+                            <input type='submit' value='delete' name='activiteitdelete'>
+                            <input type='hidden' name='id' value='" . $data['Activiteit_ID'] . "'>
+                        </form>
+                    </div>
+                    <div>
+                        <form action='activiteiten-aanmelden.php' method='post'>
+                            <input type='submit' value='aanmelden' name='aanmelden'>
+                            <input type='hidden' name='id' value='" . $data['Activiteit_ID'] . "'>
+                        </form>
+                        "; $activiteitid = $data['Activiteit_ID'];
+                            $aantaldeelnemers = $this->getallDeelnemers($activiteitid);
+                            echo 'aantal deelnemers: ' . $aantaldeelnemers . "                  <!--ADD p TAG FOR STYLING-->
+                    </div>
+                    </div>
+                </div>";
+
+
+
+                <!--WHAT IS SHOULD BE-->$_POST
+                <div class="card" style="width: 25rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">" . $data['Activiteit_Naam'] . "</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">" . $data['Activiteit_Datum'] . "</h6>
+                        <p class="card-text">" . $data['Activiteit_Beschrijving'] . "</p>
+                        <p class="card-text">plaats: " . $data['Activiteit_Plaats'] . " - adres: " . $data['Activiteit_Straat'] . " " . $data['Activiteit_Huisnummer'] . " - Postcode: " . $data['Activiteit_Postcode'] . "</p>
+                       <div class="activiteitupdaten">
+                           <form action='activiteit-change.php' method='get'>
+                            <input type='submit' value='change' name='activiteitupdate'>
+                            <input type='hidden' name='id' value='" . $data['Activiteit_ID'] . "'>
+                        </form>
+                    </div>
+
+                    <div class="activiteitdeleten">
+                        <form action='activiteiten-overzichtpage.php' method='post'>
+                                <input type='submit' value='delete' name='activiteitdelete'>
+                                <input type='hidden' name='id' value='" . $data['Activiteit_ID'] . "'>
+                            </form>
+                    </div>
+
+                    <div class="aanmeldenactiviteit">
+                    <form action='activiteiten-aanmelden.php' method='post'>
+                            <input type='submit' value='aanmelden' name='aanmelden'>
+                            <input type='hidden' name='id' value='" . $data['Activiteit_ID'] . "'>
+                        </form>
+                    </div>
+
+                        <div class="aantaldeelnemers">
+                        $activiteitid = $data['Activiteit_ID'];
+                            $aantaldeelnemers = $this->getallDeelnemers($activiteitid);
+                            echo <p>'aantal deelnemers: ' . $aantaldeelnemers . " </p>  
+                        </div>
+                    </div>
+                    </div>
+
+
 
 
     <!-- Optional JavaScript -->

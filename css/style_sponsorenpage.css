@@ -11,7 +11,7 @@ body{
   .content {
     margin-left: 250px;
     padding: 0px 0px;
-    background-color: red;
+    background: none;
 }
 /*i {
 
@@ -20,19 +20,61 @@ body{
     margin: 1rem;
 }*/
 
-h1{
+.sponsorenwelkom h1{
     font-size: 40px;
     color: black;
     font-family: 'Neucha', cursive;
+    border-bottom: 2px solid #013220;
+}
+.showsponsorpagina{
+  border: 1px solid #013220;
 }
 
-p {
-  color: yellow;
+.showsponsorpagina-titel{
+  font-family: 'Neucha', cursive; 
+  color: #013220;
+  border-bottom: 1px solid #013220;
 }
 
-.test {
-  color: black;
+.showsponsorpagina-tekst{
+
+  font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 110%;
+    color: black;
 }
+
+.get-all-sponsors{
+  border: 2px solid #013220; 
+}
+
+.get-all-sponsors-title{
+  font-family: 'Neucha', cursive; 
+  color: #013220;
+  border-bottom: 1px solid #013220;
+}
+
+.get-all-sponsors .btn{
+  color: white;
+  background: #013220;
+  font-family: 'Open Sans Condensed', sans-serif;
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  margin: 10px 5px;
+  border: 1px solid #013220;
+}
+
+.get-all-sponsors .btn:hover{
+  color: #013220;
+  font-family: 'Open Sans Condensed', sans-serif;
+  background: white;
+ padding: 5px;
+ width: 100%;
+ font-size: 18px;
+ margin: 10px 5px;
+ border: 1px solid #013220;
+}
+
 
 /*FOOTER*/
 footer {
@@ -43,4 +85,32 @@ footer {
   background-color: #013220;
   color: white;
   text-align: center;
+}
+
+ /* On screens that are less than 700px wide, make the sidebar into a topbar */
+ @media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .sidebar a {
+    float: left;
+  }
+
+  div.content {
+    margin-left: 0;
+  }
+
+
+
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
 }
