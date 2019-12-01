@@ -84,6 +84,8 @@ include "nav.php";
         </div>
  </div>
  </div>
+
+ <?php
         $pagina = new ViewPagina();
         $pagina->showoveronspagina($titel);
     ?>

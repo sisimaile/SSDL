@@ -30,7 +30,7 @@ include 'processen/ViewPagina.php';
     <div class="sidebar-header">
         <form action="homepage.php" method="get">
             <button type="submit" class="btn-icoon my-1 text-center">
-                <i class="fas fa-leaf" id="fafaicon"></i>
+                <i class="fas fa-leaf" id=""></i>
             </button>
             <input type="hidden" value="home" name="pagina">
         </form>

@@ -1,0 +1,70 @@
+
+
+/*STYLING VAN DE SPONSOREN*/
+
+.card{
+    border: 1px solid #013220;
+}
+.card-title{
+    font-family: 'Neucha', cursive; 
+    color: #013220;
+    border-bottom: 1px solid #013220;
+
+}
+
+.card-text {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 110%;
+    color: black;
+}
+
+
+
+/*GET ALL SPONSORS*/
+
+
+.get-all-sponsors{
+    border: 2px solid #013220; 
+}
+
+.get-all-sponsors-title{
+    font-family: 'Neucha', cursive; 
+    color: #013220;
+    border-bottom: 1px solid #013220;
+}
+
+.get-all-sponsors .btn{
+    color: white;
+    background: #013220;
+    font-family: 'Open Sans Condensed', sans-serif;
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    margin: 10px 5px;
+    border: 1px solid #013220;
+}
+
+.get-all-sponsors .btn:hover{
+    color: #013220;
+    font-family: 'Open Sans Condensed', sans-serif;
+    background: white;
+   padding: 5px;
+   width: 100%;
+   font-size: 18px;
+   margin: 10px 5px;
+   border: 1px solid #013220;
+}
+
+
+
+/* VIEW ONE SPONSOR
+
+IS dit op 1 pagina? dan zelfde styling als aanmelden nieuw lid*/
+
+.view-one-sponsor-box p{
+    font-size: 16px;
+    font-family: 'Neucha', cursive;
+    border-bottom: 4px solid #013220;
+    margin-bottom: 50px;
+    padding: 13px 0px;
+}
