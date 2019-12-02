@@ -1,7 +1,7 @@
 body{
   overflow-x: hidden;
   font-family: 'Open Sans Condensed', sans-serif;
-  background-color: white;
+  background-color: yellow;
   margin: 0px;
   padding: 0px;
   height: 100%;
@@ -22,7 +22,7 @@ body{
 
 .sponsorenwelkom h1{
     font-size: 40px;
-    color: black;
+    color: red;
     font-family: 'Neucha', cursive;
     border-bottom: 2px solid #013220;
 }

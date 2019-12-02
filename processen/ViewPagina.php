@@ -46,12 +46,20 @@ class ViewPagina extends Pagina
 
         if ($result) {
             foreach ($result as $data) {
-                echo $data['Pagina_titel'];
-                echo $data['Pagina_tekst'];
-                echo "<img src='images/" . $data['Pagina_image'] . "'alt='pagina.php image' class='img-fluid'>";
+                echo '
+                <div class="row">
+                    <div class="col-md-6">
+                    <h1 class="showOnaPaginah3">' . $data['Pagina_titel'] . ' </h1>
+                    <p class="showOnePaginep"> ' . $data['Pagina_tekst'] . ' </p>
+   
+                    <img src="images/' . $data['Pagina_image'] . '" alt="pagina.php image" class="img-fluid"> 
+                    </div>
+
+                </div>
+                ';
             }
         }else{
-            echo "pagina niet gevonden";
+            echo "<p class='showOnePaginep'>pagina niet gevonden</p>";
         }
     }
 
@@ -128,16 +136,17 @@ class ViewPagina extends Pagina
         $datas = $this->getOnePaginatitel($titel);
 
         foreach ($datas as $data){
-            echo ' <div class="row">
+            echo '<div class="row">
                     <div class="col-md-6">
-                    <div class="card showsponsorpagina" style="width: 25rem;">
-                        <div class="card-body">
-                        <h1 class="display-4 showsponsorpagina-titel">Meet the ' . $data['Pagina_titel'] . '</h1>
-                    
-                        <p class="test showsponsorpagina-tekst">' . $data['Pagina_tekst'] . '</p>
-                    </div>
-                </div>
-            </div>';
+                        <div class="card showsponsorpagina" style="width: 25rem;">
+                            <div class="card-body">
+                                <h1 class="display-4 showsponsorpagina-titel">Meet the ' . $data['Pagina_titel'] . '</h1>
+                        
+                                <p class="test showsponsorpagina-tekst">' . $data['Pagina_tekst'] . '</p>
+                            </div>
+                        </div>
+                    </div>    
+                </div>';
         }
     }
 
