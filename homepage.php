@@ -42,9 +42,9 @@ include_once "processen/ViewPagina.php";
    
 
     <?php
-         $titel = $_GET['pagina'];
-         $datas = new ViewPagina();
-         $datas->showhomePagina($titel);
+        // $titel = $_GET['pagina'];
+         //$datas = new ViewPagina();
+         //$datas->showhomePagina($titel);
     ?>
 
 
@@ -59,7 +59,7 @@ include_once "processen/ViewPagina.php";
                 Nihil laudantium pariatur atque, dolor recusandae error eum? In ipsam, quia eos ipsa officiis, ad corrupti error ratione 
                 porro odio laudantium reiciendis consequatur aliquam nihil delectus tempora. Sapiente blanditiis nostrum incidunt dolore ex.</p>
             <br>
-            <a href="#" class="btn btn-primary">meer over ons</a>
+            <a href="over-ons.php" class="btn btn-primary">meer over ons</a>
         </div>
         <div class="col-lg-6">     
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ratione temporibus blanditiis deleniti totam eligendi, porro 
@@ -126,7 +126,7 @@ include_once "processen/ViewPagina.php";
                 Nihil laudantium pariatur atque, dolor recusandae error eum? In ipsam, quia eos ipsa officiis, ad corrupti error ratione 
                 porro odio laudantium reiciendis consequatur aliquam nihil delectus tempora. Sapiente blanditiis nostrum incidunt dolore ex.</p>
             <br>
-            <a href="#" class="btn btn-primary">meer activiteiten</a>
+            <a href="activiteiten-overzichtpage.php" class="btn btn-primary">meer activiteiten</a>
         </div>
         <div class="col-lg-6 two-column-section2">
             <img src="images/img1.jpg" class="img-fluid" alt="">
@@ -170,8 +170,8 @@ include_once "processen/ViewPagina.php";
         <div class="col-md-1"></div>
     </div>
     <div class="row sponsorenkennen1 text-center">
-        <div class="col">
-            <button class="btn btn-primary" >Meer over onze sponsoren</button>
+        <div class="col knoppen">
+        <a href="sponsorenpage.php" class="btn btn-primary">Onze sponsoren</a>
         </div>
     </div>
 </div>

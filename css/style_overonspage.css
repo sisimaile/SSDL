@@ -39,7 +39,7 @@ position: relative;
     font-size: 1.3em;
  }
 
-.info-over-ons2  button{
+.info-over-ons2 a{
     color: white;
     width: 50%;
     background: #013220;
@@ -50,7 +50,7 @@ position: relative;
 
 }
 
-.info-over-ons2  button:hover {
+.info-over-ons2 a:hover {
     color: #013220;
     width: 50%;
     background: none;
@@ -61,7 +61,7 @@ position: relative;
   }
 
 
-.info-over-ons3 button{
+.info-over-ons3 a{
     color: white;
     width: 50%;
     background: #013220;
@@ -72,7 +72,7 @@ position: relative;
 }
 
 
-.info-over-ons3  button:hover {
+.info-over-ons3  a:hover {
     color: #013220;
     width: 50%;
     background: none;

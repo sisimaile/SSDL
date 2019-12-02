@@ -1,0 +1,15 @@
+body{
+    overflow-x: hidden;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+position: relative;
+    
+  }
+
+.content {
+    margin-left: 250px;
+    padding: 0px 0px;
+}

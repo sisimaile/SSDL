@@ -5,10 +5,6 @@ include "processen/class_sponsor.php";
 include "processen/class_view_sponsor.php";
 include "nav.php";
 
-
-include "nav.php";
-
-
 if(isset($_POST['sponsortoevoegen'])) {
     $naam_sponsor = $_POST['naamsponsor'];
     $email_sponsor = $_POST['emailSponsor'];
@@ -21,7 +17,7 @@ if(isset($_POST['sponsortoevoegen'])) {
     $afbeelding_sponsor = $_POST['afbeeldingSponsor'];
 
     $nieuweSponsor = new Sponsor;
-    $nieuweSponsor->sponsor_toevoegen ($naam_sponsor, $email_sponsor, $telefoon_sponsor, $overde_sponsor, $plaats_sponsor, $straat_sponsor, $huisnummer_sponsor, $postcode_sponsor, $afbeelding_sponsor );
+    //$nieuweSponsor->sponsor_toevoegen ($naam_sponsor, $email_sponsor, $telefoon_sponsor, $overde_sponsor, $plaats_sponsor, $straat_sponsor, $huisnummer_sponsor, $postcode_sponsor, $afbeelding_sponsor );
     
     $nieuweSponsor->naam_sponsor = $naam_sponsor;
     $nieuweSponsor->straat_sponsor = $straat_sponsor;

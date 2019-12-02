@@ -78,7 +78,6 @@ class ViewPagina extends Pagina
                         </div>
                     </div>
 
-
                     <div class="container">
                     <div class="row">
                         <div class="col welkom-over-ons2">

@@ -74,7 +74,7 @@ include 'processen/ViewPagina.php';
     <div class="knopsidebar text-center">
          
     <button type="button" class="btn btn-sidebar-gh my-1   text-center">uitloggen</button> <br>
-    <button type="button" class="btn btn-sidebar-gh my-1   text-center">wijzigingen opslaan</button>
+  
     <a href="login.php"><button type="button" class="btn btn-sidebar-gh my-1 text-center">inloggen</button></a>
     <a href="leden-aanmelden.php"><button type="button" class="btn btn-sidebar-gh my-1 text-center">aanmelden</button></a> 
     </div>

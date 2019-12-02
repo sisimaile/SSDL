@@ -49,19 +49,19 @@ class viewActivity extends ActivityValidator {
         $result = $this->getOneActiviteit($id);
 
         foreach ($result as $data) {
-            echo "Naam: " . $data['Activiteit_Naam'];
+            echo "<p class='showoneactiviteit-p'>Naam:</p> " . $data['Activiteit_Naam'];
             echo "<br>";
-            echo "Datum: " . $data['Activiteit_Datum'];
+            echo "<p>Datum:</p> " . $data['Activiteit_Datum'];
             echo "<br>";
-            echo "Straat: " . $data['Activiteit_Straat'];
+            echo "<p>Straat:</p> " . $data['Activiteit_Straat'];
             echo "<br>";
-            echo "Huisnummer: " . $data['Activiteit_Huisnummer'];
+            echo "<p>Huisnummer:</p> " . $data['Activiteit_Huisnummer'];
             echo "<br>";
-            echo "Postcode: " . $data['Activiteit_Postcode'];
+            echo "<p>Postcode:</p> " . $data['Activiteit_Postcode'];
             echo "<br>";
-            echo "Beschrijving: " . $data['Activiteit_Beschrijving'];
+            echo "<p>Beschrijving:</p> " . $data['Activiteit_Beschrijving'];
             echo "<br>";
-            echo "Image: <img src='images/" . $data['Activiteit_image'] . "'alt='pagina.php image'>";
+            echo "<p>Image:</p> <img src='images/" . $data['Activiteit_image'] . "'alt='pagina.php image'>";
         }
     }
 }
