@@ -62,7 +62,7 @@ class Pagina extends Connection
                 $sqltoevoegen = "INSERT INTO `pagina` (Pagina_titel, Pagina_tekst, Pagina_image) VALUES ('$titel', '$message', '$image')";
                 $link = $this->connect()->query($sqltoevoegen);
                 if ($link){
-                    header("Location: homepage.php?pagina-aangemaakt");
+                    header("Location: pagina-lijst.php?pagina-aangemaakt");
                 }else{
                     header("Location: pagina-toevoegen.php?pagina-is-niet-aangemaakt");
                 }

@@ -160,6 +160,9 @@ class ViewPagina extends Pagina
                         <a href="pagina-lijst.php" class="text-center">Beheer pagina`s</a>
                     </li>
                     <li>
+                        <a href="pagina-toevoegen.php" class="text-center">aanmaken pagina`s</a>
+                    </li>
+                    <li>
                         <a href="leden-beheer.php" class="text-center">Beheer leden</a>
                     </li>
                     <li>
