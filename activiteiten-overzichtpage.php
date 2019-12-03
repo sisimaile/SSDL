@@ -38,13 +38,12 @@ if (isset($_POST['activiteitdelete'])) {
   <div class="col-md-4">
   <div class="content">
 
-<h1 class="bekijkactiviteitentitel">Bekijk onze activiteiten</h1>
 
   <?php
-    //$titel = $_GET['pagina'];
+    $titel = $_GET['pagina'];
 
-   // $pagina = new ViewPagina();
-    //$pagina->showactiviteitenPagina($titel)
+    $pagina = new ViewPagina();
+    $pagina->showactiviteitenPagina($titel)
   ?>
 
            

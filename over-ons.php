@@ -35,6 +35,13 @@ include "nav.php";
         $datas = new ViewPagina();
         $datas->showoveronspagina($titel);
     ?>
+
+    <?php
+        if(isset($_SESSION['lid'])) {
+            $beheerderlinks = new ViewPagina();
+            $beheerderlinks->showoveronsextra();
+        }
+    ?>
 </div>
 </div>
 

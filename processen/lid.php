@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 include_once('Connection.php');
 
 class lid extends Connection
@@ -93,7 +95,7 @@ class lid extends Connection
 
             if ($results > 0){
                 $_SESSION['lid'] = $username;
-                header("Location: homepage.php?u-bent-ingelogd");
+                header("Location: homepage.php?pagina=home");
             }else{
                 echo "de gebruikersnaam of wachtwoord klopt niet";
             }

@@ -146,13 +146,35 @@ class ViewPagina extends Pagina
                         <div class="card showsponsorpagina" style="width: 25rem;">
                             <div class="card-body">
                                 <h1 class="display-4 showsponsorpagina-titel">Meet the ' . $data['Pagina_titel'] . '</h1>
-                        
-                                <p class="test showsponsorpagina-tekst">' . $data['Pagina_tekst'] . '</p>
                             </div>
                         </div>
                     </div>    
                 </div>';
         }
+    }
+
+    public function showbeheerderlinks(){
+        echo '<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle text-center">Beheerder</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a href="pagina-lijst.php" class="text-center">Beheer pagina`s</a>
+                    </li>
+                    <li>
+                        <a href="leden-beheer.php" class="text-center">Beheer leden</a>
+                    </li>
+                    <li>
+                        <a href="beheer-sponsor.php" class="text-center">aanmaken sponsor</a>
+                    </li>
+                    <li>
+                        <a href="beheer-activiteit.php" class="text-center">aanmaken activiteit</a>
+                    </li>
+                </ul>';
+    }
+
+    public function showoveronsextra(){
+        echo '<div>
+                <p>extra informatie voor leden</p>
+              </div>';
     }
 
 }

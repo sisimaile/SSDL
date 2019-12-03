@@ -37,12 +37,11 @@ if (isset($_POST['deleteSponsor'])){
  
 <div class="container-fluid">
     <div class="content">
-        <h1 class="sponsorenwelkom">Maak kennis met onze sponsoren!</h1>
 
         <?php
-        //$titel = $_GET['pagina'];
-       // $pagina = new ViewPagina();
-        //$pagina->showsponsorPagina($titel)
+            $titel = $_GET['pagina'];
+            $pagina = new ViewPagina();
+            $pagina->showsponsorPagina($titel)
         ?>
     
 <br>
