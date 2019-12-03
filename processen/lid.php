@@ -2,8 +2,6 @@
 
 session_start();
 
-include_once('Connection.php');
-
 class lid extends Connection
 {
     protected function getAllleden()

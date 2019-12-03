@@ -1,7 +1,6 @@
 <?php
 
-
-include_once "class_activiteit.php";
+include "class_activiteit.php";
 
 class viewActivity extends ActivityValidator {
 

@@ -1,8 +1,7 @@
 <?php
 
-include 'processen/Connection.php';
-include 'processen/class_activiteit.php';
-include_once 'processen/lid.php';
+include 'nav.php';
+include 'processen/lid.php';
 
 if (isset($_POST['submit'])){
     $naam = $_POST['naam'];

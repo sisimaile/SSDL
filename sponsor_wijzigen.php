@@ -1,8 +1,6 @@
 <?php
 include "header.php";
 include "nav.php";
-include_once "processen/class_view_sponsor.php";
-include_once "processen/class_sponsor.php";
 
 if (isset($_POST['wijzig'])){
     $sponsorgegevens_id = $_POST['id'];

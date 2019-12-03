@@ -1,8 +1,6 @@
 <?php
-//include "header.php";
-include "nav.php";
 
-include "processen/class_view_sponsor.php";
+include "nav.php";
 
 if(isset($_POST['sponsortoevoegen'])) {
     $naam_sponsor = $_POST['naamsponsor'];

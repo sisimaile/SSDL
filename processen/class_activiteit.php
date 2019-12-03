@@ -7,10 +7,6 @@ Class ActivityValidator extends Connection
     private $data;
     private $errors = [];
     private static $fields = ['titelactiviteit', 'datumactiviteit', 'straatactiviteit', 'huisnummeractiviteit', 'postcodeactiviteit', 'plaatsactiviteit', 'beschrijvingactiviteit', 'image'];
-//
-//    public function __construct($post_data) {
-//        $this->data = $post_data;
-//    }
 
     public function validateForm()
     {

@@ -3,9 +3,6 @@
 
 include "nav.php";
 
-include 'processen/class_activiteit.php';
-include 'processen/viewActivity.php';
-
 if (isset($_POST['activiteitdelete'])) {
     $activiteitid = $_POST['id'];
 

@@ -1,9 +1,7 @@
 <?php
 
 
-//include "nav.php";
-include "processen/class_view_sponsor.php";
-include_once "processen/class_sponsor.php";
+include "nav.php";
 include_once "processen/ViewPagina.php";
 include_once "processen/Pagina.php";
 

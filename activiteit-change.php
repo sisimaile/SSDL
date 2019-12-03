@@ -1,8 +1,6 @@
 <?php
-//include "nav.php";
-include 'processen/Connection.php';
-include 'processen/class_activiteit.php';
-include 'processen/viewActivity.php';
+
+include "nav.php";
 
 
 if (isset($_POST['activiteitchange'])){
