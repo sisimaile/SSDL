@@ -1,5 +1,6 @@
 <?php
 
+
 include_once "class_activiteit.php";
 
 class viewActivity extends ActivityValidator {
@@ -14,22 +15,7 @@ class viewActivity extends ActivityValidator {
                             <h5 class='card-title showAllActivities-h5'>" . $data['Activiteit_Naam'] . "</h5>
                             <h6 class='card-subtitle mb-2 text-muted showAllActivities-h6'>" . $data['Activiteit_Datum'] . "</h6>
                             <p class='card-text showAllActivities-text'>" . $data['Activiteit_Beschrijving'] . "</p>
-                            <p class='card-text showAllActivities-text'>plaats: " . $data['Activiteit_Plaats'] . " - adres: " . $data['Activiteit_Straat'] . " " . $data['Activiteit_Huisnummer'] . " - Postcode: " . $data['Activiteit_Postcode'] . "</p>
-
-                        <div>
-                            <form action='activiteit-change.php' method='get'>
-                                <input type='submit' value='change' class='btn btnactiviteitaanpassen text-center' name='activiteitupdate'>
-                                <input type='hidden' name='id' value='" . $data['Activiteit_ID'] . "'>
-                            </form>
-                        </div>
-                        
-                        <div>
-                            <form action='activiteiten-overzichtpage.php' method='post'>
-                                <input type='submit' value='delete' class='btn btnactiviteitverwijderen' name='activiteitdelete'>
-                                <input type='hidden' name='id' value='" . $data['Activiteit_ID'] . "'>
-                            </form>
-                        </div>
-                        
+                            <p class='card-text showAllActivities-text'>plaats: " . $data['Activiteit_Plaats'] . " - adres: " . $data['Activiteit_Straat'] . " " . $data['Activiteit_Huisnummer'] . " - Postcode: " . $data['Activiteit_Postcode'] . "</p>                    
                         <div>
                             <form action='activiteiten-aanmelden.php' method='post'>
                                 <input type='submit' value='aanmelden' class='btn btnactiviteitaanmelden' name='aanmelden'>
@@ -44,6 +30,23 @@ class viewActivity extends ActivityValidator {
                         </div>
                     </div>";
 
+            if (isset($_SESSION['lid'])){
+                if ($_SESSION['lid'] == 'admin'){
+                    echo "<div>
+                            <form action='activiteit-change.php' method='get'>
+                                <input type='submit' value='change' class='btn btnactiviteitaanpassen text-center' name='activiteitupdate'>
+                                <input type='hidden' name='id' value='" . $data['Activiteit_ID'] . "'>
+                            </form>
+                        </div>
+                        
+                        <div>
+                            <form action='activiteiten-overzichtpage.php' method='post'>
+                                <input type='submit' value='delete' class='btn btnactiviteitverwijderen' name='activiteitdelete'>
+                                <input type='hidden' name='id' value='" . $data['Activiteit_ID'] . "'>
+                            </form>
+                        </div>";
+                }
+            }
         }
     }
 
