@@ -80,7 +80,7 @@ class ViewPagina extends Pagina
         foreach ($datas as $data) {
             echo '<div class="row welkom-over-ons">
                         <div class="col welkom-over-ons1 text-center">
-                            <h1>Welkomtest</h1>
+                            <h1>Welkom!</h1>
                             <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis pariatur animi quas assumenda!</h5>
                         </div>
                     </div>
@@ -101,12 +101,18 @@ class ViewPagina extends Pagina
                         <div class="col-md-4">
                             <div class="row-md-6 info-over-ons2">
                                 <div class="col">
-                                    <button class="btn btn-primary">Onze activiteiten</button>
+                                    <form action="activiteiten-overzichtpage.php" method="get">
+                                        <button type="submit" class="btn btn-sidebar">Onze activiteiten</button>
+                                        <input type="hidden" value="activiteiten" name="pagina">
+                                    </form>
                                 </div>
                             
                             </div>
                             <div class="row-md-6 info-over-ons3">
-                            <button class="btn btn-primary">Onze sponsoren</button>
+                                <form action="sponsorenpage.php" method="get">
+                                    <button type="submit" class="btn btn-sidebar">Onze sponsoren</button>
+                                    <input type="hidden" value="sponsoren" name="pagina">
+                                </form>
                             </div>
                         </div>
                 </div>

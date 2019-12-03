@@ -30,22 +30,11 @@ include_once "processen/ViewPagina.php";
 <div class="content">  
 <!--FIXED BACKGROUND-->
 
-    <div class="fixed-wrap0">
-        <div id="fixed">
-            <div class="centered0">
-            <h1>Welkom!</h1>
-            <h3>De kabouter groet u met open armen</h3>
-            </div>
-            <img src="images/img5.jpg" class="img-fluid" alt="">
-        </div>
-    </div>
-    
     <?php
-        // $titel = $_GET['pagina'];
-         //$datas = new ViewPagina();
-         //$datas->showhomePagina($titel);
+        $titel = $_GET['pagina'];
+        $datas = new ViewPagina();
+        $datas->showhomePagina($titel);
     ?>
-
 
 <!--TWO COLUMN SECTION ABOUT US-->
             

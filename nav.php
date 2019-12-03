@@ -4,7 +4,6 @@
 include 'processen/Connection.php';
 include 'processen/Pagina.php';
 include 'processen/ViewPagina.php';
-include 'processen/class_sponsor.php';
 
 ?>
 <!doctype html>

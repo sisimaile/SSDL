@@ -1,9 +1,8 @@
-<?php 
-include "processen/Connection.php";
-require("processen/class_activiteit.php");
-//include "test/viewActivity.php";
+<?php
 
 include "nav.php";
+include_once "processen/viewActivity.php";
+include_once "processen/class_activiteit.php";
 
 
 if(isset($_POST["activiteittoevoegen"])) {

@@ -2,8 +2,6 @@
 //include "header.php";
 include "nav.php";
 
-
-include "processen/class_sponsor.php";
 include "processen/class_view_sponsor.php";
 
 if(isset($_POST['sponsortoevoegen'])) {
