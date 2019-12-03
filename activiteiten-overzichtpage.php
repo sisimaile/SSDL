@@ -8,6 +8,9 @@ include 'processen/viewActivity.php';
 
 if (isset($_POST['activiteitdelete'])) {
     $activiteitid = $_POST['id'];
+
+    $activiteitdelete = new ActivityValidator();
+    $activiteitdelete->deleteActiviteit();
 }
     ?>
 <!doctype html>

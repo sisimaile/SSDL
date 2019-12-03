@@ -1,9 +1,5 @@
 <?php
 
-include 'processen/Connection.php';
-include 'processen/Pagina.php';
-include 'processen/ViewPagina.php';
-
 //include "header.php";
 include "nav.php";
 
@@ -75,9 +71,9 @@ if (isset($_POST['paginachange'])){
                 ?>
             </section>
         </div>
-        </div>
     </div>
 </div>
+
 <p>test123</p>
 
 <?php

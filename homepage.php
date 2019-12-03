@@ -55,7 +55,10 @@ include_once "processen/ViewPagina.php";
                 Nihil laudantium pariatur atque, dolor recusandae error eum? In ipsam, quia eos ipsa officiis, ad corrupti error ratione 
                 porro odio laudantium reiciendis consequatur aliquam nihil delectus tempora. Sapiente blanditiis nostrum incidunt dolore ex.</p>
             <br>
-            <a href="#" class="btn btn-primary">meer over ons</a>
+            <form action="over-ons.php" method="get">
+                <button type="submit" class="btn btn-sidebar">meer over ons</button>
+                <input type="hidden" value="over-ons" name="pagina">
+            </form>
         </div>
         <div class="col-lg-6">       
         </div>
@@ -111,7 +114,10 @@ include_once "processen/ViewPagina.php";
                 Nihil laudantium pariatur atque, dolor recusandae error eum? In ipsam, quia eos ipsa officiis, ad corrupti error ratione 
                 porro odio laudantium reiciendis consequatur aliquam nihil delectus tempora. Sapiente blanditiis nostrum incidunt dolore ex.</p>
             <br>
-            <a href="#" class="btn btn-primary">meer activiteiten</a>
+            <form action="activiteiten-overzichtpage.php" method="get">
+                <button type="submit" class="btn btn-sidebar">meer activiteiten</button>
+                <input type="hidden" value="activiteiten" name="pagina">
+            </form>
         </div>
         <div class="col-lg-6 two-column-section2">
             <img src="images/img1.jpg" class="img-fluid" alt="">
@@ -156,7 +162,10 @@ include_once "processen/ViewPagina.php";
     </div>
     <div class="row sponsorenkennen1 text-center">
         <div class="col">
-            <button class="btn btn-primary" >Meer over onze sponsoren</button>
+            <form action="sponsorenpage.php" method="get">
+                <button type="submit" class="btn btn-sidebar">meer sponsoren</button>
+                <input type="hidden" value="sponsoren" name="pagina">
+            </form>
         </div>
     </div>
 </div>
@@ -183,7 +192,6 @@ include_once "processen/ViewPagina.php";
 <?php
 include "footer.php";
 ?>
-</div>
 
 
 

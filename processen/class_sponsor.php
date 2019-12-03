@@ -60,6 +60,7 @@ class Sponsor extends Connection {
             $resultgegevens = $this->connect()->query($sqldeletelid);
 
             if (isset($resultlid) && isset($resultgegevens)) {
+
                 header("Location: sponsorenpage.php?sponsor-verwijdert");
             } else {
                 header("Location: sponsorenpage.php?sponsor-niet-verwijdert");

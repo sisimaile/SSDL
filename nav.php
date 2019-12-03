@@ -4,6 +4,7 @@
 include 'processen/Connection.php';
 include 'processen/Pagina.php';
 include 'processen/ViewPagina.php';
+include 'processen/class_sponsor.php';
 
 ?>
 <!doctype html>
@@ -58,23 +59,22 @@ include 'processen/ViewPagina.php';
   <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle text-center">Beheerder</a>
                 <ul class="collapse list-unstyled" id="pageSubmenu">
                     <li>
-                        <a href="#" class="text-center"> beheer pagina</a>
+                        <a href="pagina-lijst.php" class="text-center">Beheer pagina's</a>
                     </li>
                     <li>
                         <a href="leden-beheer.php" class="text-center">Beheer leden</a>
                     </li>
                     <li>
-                        <a href="beheer-sponsor.php" class="text-center">Beheer sponsoren</a>
+                        <a href="beheer-sponsor.php" class="text-center">aanmaken sponsor</a>
                     </li>
                     <li>
-                        <a href="beheer-activiteit.php" class="text-center">Beheer activiteiten</a>
+                        <a href="beheer-activiteit.php" class="text-center">aanmaken activiteit</a>
                     </li>
                 </ul>
 
     <div class="knopsidebar text-center">
          
     <button type="button" class="btn btn-sidebar-gh my-1   text-center">uitloggen</button> <br>
-    <button type="button" class="btn btn-sidebar-gh my-1   text-center">wijzigingen opslaan</button>
     <a href="login.php"><button type="button" class="btn btn-sidebar-gh my-1 text-center">inloggen</button></a>
     <a href="leden-aanmelden.php"><button type="button" class="btn btn-sidebar-gh my-1 text-center">aanmelden</button></a> 
     </div>

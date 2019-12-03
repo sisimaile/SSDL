@@ -36,7 +36,6 @@ class ViewPagina extends Pagina
                             <input type='submit' class='text-center btn btn-sidebar' value='" . $data['Pagina_titel'] . "' name='paginalink'>
                             <input type='hidden' name='id' value='" . $data['Pagina_ID'] . "'> 
                        </form>";
-                //echo "<br>";
             }
         }
     }
@@ -73,7 +72,7 @@ class ViewPagina extends Pagina
         foreach ($datas as $data) {
             echo '<div class="row welkom-over-ons">
                         <div class="col welkom-over-ons1 text-center">
-                            <h1>Welkom</h1>
+                            <h1>Welkomtest</h1>
                             <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis pariatur animi quas assumenda!</h5>
                         </div>
                     </div>

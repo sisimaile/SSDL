@@ -1,11 +1,5 @@
 <?php
-include "processen/Connection.php";
 //include "header.php";
-include "processen/class_sponsor.php";
-include "processen/class_view_sponsor.php";
-include "nav.php";
-
-
 include "nav.php";
 
 
@@ -21,22 +15,8 @@ if(isset($_POST['sponsortoevoegen'])) {
     $afbeelding_sponsor = $_POST['afbeeldingSponsor'];
 
     $nieuweSponsor = new Sponsor;
-    $nieuweSponsor->sponsor_toevoegen ($naam_sponsor, $email_sponsor, $telefoon_sponsor, $overde_sponsor, $plaats_sponsor, $straat_sponsor, $huisnummer_sponsor, $postcode_sponsor, $afbeelding_sponsor );
-    
-    $nieuweSponsor->naam_sponsor = $naam_sponsor;
-    $nieuweSponsor->straat_sponsor = $straat_sponsor;
-    $nieuweSponsor->huisnummer_sponsor =  $huisnummer_sponsor;
-    $nieuweSponsor->postcode_sponsor = $postcode_sponsor;
-    $nieuweSponsor->plaats_sponsor = $plaats_sponsor;
-    $nieuweSponsor->land_sponsor = $land_sponsor;
-    $nieuweSponsor->email_sponsor = $email_sponsor;
-    $nieuweSponsor->telefoon_sponsor = $telefoon_sponsor;
-    $nieuweSponsor->overde_sponsor = $overde_sponsor;
-    $nieuweSponsor->afbeelding_sponsor = $afbeelding_sponsor;
-
-    $nieuweSponsor->sponsor_toevoegen ($naam_sponsor, $straat_sponsor, $huisnummer_sponsor, $postcode_sponsor, $plaats_sponsor, $land_sponsor, $email_sponsor, $telefoon_sponsor, $overde_sponsor, $afbeelding_sponsor );
+    $nieuweSponsor->sponsor_toevoegen($naam_sponsor, $email_sponsor, $telefoon_sponsor, $overde_sponsor, $plaats_sponsor, $straat_sponsor, $huisnummer_sponsor, $postcode_sponsor, $afbeelding_sponsor);
 }
-
 ?>
 <!doctype html>
 <html lang="en">
