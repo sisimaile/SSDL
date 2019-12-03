@@ -10,7 +10,7 @@ include 'processen/class_sponsor.php';
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Navbar</title>
+    <title></title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -31,7 +31,7 @@ include 'processen/class_sponsor.php';
     <div class="sidebar-header">
         <form action="homepage.php" method="get">
             <button type="submit" class="btn-icoon my-1 text-center">
-                <i class="fas fa-leaf" id="fafaicon"></i>
+                <i class="fas fa-leaf" id=""></i>
             </button>
             <input type="hidden" value="home" name="pagina">
         </form>

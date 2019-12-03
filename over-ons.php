@@ -74,18 +74,21 @@ include "nav.php";
         <div class="col-md-4">
             <div class="row-md-6 info-over-ons2">
                 <div class="col">
-                    <button class="btn btn-primary">Onze activiteiten</button>
+                <a href="activiteiten-overzichtpage.php" class="btn btn-primary info-over-ons3 ">Onze activiteiten</a>
+                    
                 </div>
             
             </div>
             <div class="row-md-6 info-over-ons3">
-            <button class="btn btn-primary">Onze sponsoren</button>
+            <a href="sponsorenpage.php" class="btn btn-primary info-over-ons3 ">Onze sponsoren</a>
             </div>
         </div>
  </div>
  </div>
-        $pagina = new ViewPagina();
-        $pagina->showoveronspagina($titel);
+
+ <?php
+       // $pagina = new ViewPagina();
+        //$pagina->showoveronspagina($titel);
     ?>
 
  <div class="container">
@@ -114,10 +117,6 @@ include "nav.php";
 
 <br>
 <br>
-
-
-
-
 
 </div>
 </div>

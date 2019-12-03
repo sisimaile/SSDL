@@ -1,0 +1,27 @@
+body{
+    overflow-x: hidden;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+  }
+  
+    
+    /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+    .content {
+      margin-left: 250px;
+      padding: 0px 0px;
+  }
+  
+  
+  /*FOOTER*/
+    footer {
+      position: relative;
+      left: 0;
+      bottom: 0;
+      width:100%;
+      background-color: #013220;
+      color: white;
+      text-align: center;
+    }

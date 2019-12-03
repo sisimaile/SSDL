@@ -32,7 +32,7 @@ if (isset($_POST['submit'])){
     <script src="https://kit.fontawesome.com/f2c75c26a9.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/.css">
+    <link rel="stylesheet" type="text/css" href="css/style_activiteiten-aanmelden.css">
     <link rel="shortcut icon" type="image/png" href="images/favicon1.png">
 </head>
 <body>
@@ -65,7 +65,7 @@ if (isset($_POST['submit'])){
 
                 <input type="hidden" name="activiteitid" value="<?php echo $_POST['id']; ?>">
 
-                <input class="btn btn-primary knop-lid-aanmelden" id="lid-aanmelden" type="submit" name="submit">
+                <input class="btn btn-primary knop-lid-aanmelden-activiteit" id="lid-aanmelden" type="submit" name="submit">
             </form>
         </section>
     </div>

@@ -1,7 +1,7 @@
 <?php
 
 
-include "nav.php";
+//include "nav.php";
 include "processen/class_view_sponsor.php";
 include_once "processen/class_sponsor.php";
 include_once "processen/ViewPagina.php";
@@ -19,7 +19,7 @@ if (isset($_POST['deleteSponsor'])){
 <!doctype html>
 <html lang="en">
   <head>
-    <title>sponsoren</title>
+    <title>Sponsoren</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -35,29 +35,26 @@ if (isset($_POST['deleteSponsor'])){
   </head>
   <body>
  
+<div class="container-fluid">
+    <div class="content">
+        <h1 class="sponsorenwelkom">Maak kennis met onze sponsoren!</h1>
 
-<!--SPONSOREN OVERZICHT-->
-<div class="content">
-    <div class="container-fluid ">
-<p>testetstetststetstetstetstetstetstetst</p>
         <?php
-        $titel = $_GET['pagina'];
-
-        $pagina = new ViewPagina();
-        $pagina->showsponsorPagina($titel)
+        //$titel = $_GET['pagina'];
+       // $pagina = new ViewPagina();
+        //$pagina->showsponsorPagina($titel)
         ?>
     
-
+<br>
     <!--TWO COLUMN SECTION sponsoren-->
-    <div id="sponsors">
-        <?php
-            $sponsor = new view();
-            $sponsor->getallSponsors();
-        ?>
+        <div id="sponsors">
+            <?php
+               $sponsor = new view();
+                $sponsor->getallSponsors();
+            ?>
+        </div>
     </div>
 </div>
-
-
  
 
 <?php
@@ -65,4 +62,4 @@ if (isset($_POST['deleteSponsor'])){
 include "footer.php";
 ?>
     
-</div>
+

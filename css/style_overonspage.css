@@ -39,17 +39,18 @@ position: relative;
     font-size: 1.3em;
  }
 
-.info-over-ons2  button{
+.info-over-ons2 a{
     color: white;
     width: 50%;
     background: #013220;
+     border: 2px solid #013220;
     padding: 5px;
     font-size: 18px;
      margin: 12px 0;
 
 }
 
-.info-over-ons2  button:hover {
+.info-over-ons2 a:hover {
     color: #013220;
     width: 50%;
     background: none;
@@ -60,18 +61,18 @@ position: relative;
   }
 
 
-.info-over-ons3 button{
+.info-over-ons3 a{
     color: white;
     width: 50%;
     background: #013220;
-  
+    border: 2px solid #013220;
     padding: 5px;
     font-size: 18px;
      margin: 12px 0;
 }
 
 
-.info-over-ons3  button:hover {
+.info-over-ons3  a:hover {
     color: #013220;
     width: 50%;
     background: none;
@@ -121,25 +122,6 @@ position: relative;
       margin-left: 0;
     }
 
-    .knopsidebar button {
-      color: white;
-      width: 20%;
-      background: #013220;
-    
-      padding: 5px;
-      font-size: 18px;
-       margin: 12px 0;
-    }
-
-    .knopsidebar button:hover {
-      color: #013220;
-      width: 20%;
-      background: none;
-      border: 2px solid #013220;
-      padding: 5px;
-      font-size: 18px;
-       margin: 12px 0;
-    }
 
 
   }

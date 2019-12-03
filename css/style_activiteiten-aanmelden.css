@@ -1,4 +1,5 @@
 body{
+
     margin: 0;
     padding: 0;
     font-family: 'Open Sans Condensed', sans-serif;
@@ -6,14 +7,17 @@ body{
     background-size: cover;
 }
 
-.aanmeld-box {
-    width: 280px;
+
+.aanmeld-box{
+
+    width: 300px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: black;
 }
+
 
 .aanmeld-box h1{
     float: left;
@@ -24,22 +28,17 @@ body{
     padding: 13px 0px;
 }
 
-.textbox-lid-aanmelden {
+.textbox-activiteit-aanmelden{
     width: 100%;
     overflow: hidden;
     font-size: 20px;
     padding: 8px 0;
     margin: 8px 0;
     border-bottom: 2px solid #013220;
+
 }
 
-.textbox-lid-aanmelden i{
-    width: 26px;
-    float: left;
-    text-align: center;
-}
-
-.textbox-lid-aanmelden input {
+.textbox-activiteit-aanmelden input{
     border: none;
     outline: none;
     background: none;
@@ -50,18 +49,8 @@ body{
     margin: 0 10px;
 }
 
-.knop-lid-aanmelden {
-    width: 100%;
-    background: none;
-    border: 2px solid #013220;
-    color: black;
-    padding: 5px;
-    font-size: 18px;
-    cursor: pointer;
-    margin: 12px 0;
-}
 
-.knop-lid-aanmelden:hover {
+.knop-lid-aanmelden-activiteit {
     width: 100%;
     background: #013220;
     border: 2px solid #013220;
@@ -70,7 +59,15 @@ body{
     font-size: 18px;
     cursor: pointer;
     margin: 12px 0;
-
 }
 
-
+.knop-lid-aanmelden-activiteit:hover{
+    width: 100%;
+    background: white;
+    border: 2px solid #013220;
+    color: black;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 12px 0;
+}

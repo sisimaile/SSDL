@@ -1,0 +1,72 @@
+body{
+    overflow-x: hidden;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin: 0px;
+    padding: 0px;
+  
+  }
+
+  .content {
+    margin-left: 250px;
+    padding: 0px 0px;
+}
+
+.test{
+  border-bottom: 2px solid #013220;
+}
+
+.activiteit-aanpassen-box{
+  width: 280px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+
+}
+
+
+.textbox-activiteit-aanpassen{
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+  border-bottom: 2px solid #013220;
+
+}
+
+.textbox-activiteit-aanpassen input{
+  border: none;
+  outline: none;
+  background: none;
+  color: black;
+  font-size: 18px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+
+}
+
+.knop-activiteit-aanpassen{
+  width: 100%;
+  background: none;
+  border: 2px solid #013220;
+  color: black;
+  padding: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 12px 0;
+
+}
+
+   /*FOOTER*/
+   footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width:100%;
+    background-color: #013220;
+    color: white;
+    text-align: center;
+  }

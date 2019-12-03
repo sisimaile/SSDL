@@ -6,7 +6,7 @@ body{
     background-size: cover;
 }
 
-.aanmeld-box {
+.pagina-toevoegen-box {
     width: 280px;
     position: absolute;
     top: 50%;
@@ -15,7 +15,8 @@ body{
     color: black;
 }
 
-.aanmeld-box h1{
+
+.pagina-toevoegen-box h1{
     float: left;
     font-size: 40px;
     font-family: 'Neucha', cursive;
@@ -24,7 +25,7 @@ body{
     padding: 13px 0px;
 }
 
-.textbox-lid-aanmelden {
+.textbox-pagina-toevoegen{
     width: 100%;
     overflow: hidden;
     font-size: 20px;
@@ -33,24 +34,30 @@ body{
     border-bottom: 2px solid #013220;
 }
 
-.textbox-lid-aanmelden i{
-    width: 26px;
-    float: left;
-    text-align: center;
-}
-
-.textbox-lid-aanmelden input {
+.textbox-pagina-toevoegen input{
     border: none;
     outline: none;
     background: none;
     color: black;
-    font-size: 18px;
+    font-size: 20px;
     width: 80%;
     float: left;
     margin: 0 10px;
 }
 
-.knop-lid-aanmelden {
+.textbox-pagina-toevoegen textarea{
+    border: none;
+    outline: none;
+    background: none;
+    color: black;
+    font-size: 20px;
+    width: 80%;
+    float: left;
+    margin: 0 10px;
+}
+
+.knop-pagina-toevoegen{
+
     width: 100%;
     background: none;
     border: 2px solid #013220;
@@ -61,7 +68,7 @@ body{
     margin: 12px 0;
 }
 
-.knop-lid-aanmelden:hover {
+.knop-pagina-toevoegen:hover{
     width: 100%;
     background: #013220;
     border: 2px solid #013220;
@@ -70,7 +77,4 @@ body{
     font-size: 18px;
     cursor: pointer;
     margin: 12px 0;
-
 }
-
-

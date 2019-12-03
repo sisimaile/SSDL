@@ -32,15 +32,18 @@ include_once "processen/ViewPagina.php";
 
     <div class="fixed-wrap0">
         <div id="fixed">
+            <div class="centered0">
+            <h1>Welkom!</h1>
+            <h3>De kabouter groet u met open armen</h3>
+            </div>
             <img src="images/img5.jpg" class="img-fluid" alt="">
         </div>
     </div>
-   
-
+    
     <?php
-         $titel = $_GET['pagina'];
-         $datas = new ViewPagina();
-         $datas->showhomePagina($titel);
+        // $titel = $_GET['pagina'];
+         //$datas = new ViewPagina();
+         //$datas->showhomePagina($titel);
     ?>
 
 
@@ -60,7 +63,18 @@ include_once "processen/ViewPagina.php";
                 <input type="hidden" value="over-ons" name="pagina">
             </form>
         </div>
-        <div class="col-lg-6">       
+        <div class="col-lg-6">     
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ratione temporibus blanditiis deleniti totam eligendi, porro 
+            fugit laboriosam dolorum aut magnam molestias rerum ipsam quaerat quae velit dolor hic reprehenderit odit excepturi 
+            soluta dignissimos impedit dolores! Excepturi impedit, corrupti laborum odio numquam vitae nobis nihil laboriosam ipsa
+             sit voluptatibus nulla. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem pariatur delectus 
+             labore obcaecati natus ullam ex vero modi, eveniet unde. Excepturi impedit, corrupti laborum odio numquam vitae nobis nihil laboriosam ipsa
+             sit voluptatibus nulla. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem pariatur delectus 
+             labore obcaecati natus ullam ex vero modi, eveniet unde.   Rem pariatur delectus 
+             labore obcaecati natus ullam ex vero modi, eveniet unde.lores! Excepturi impedit, corrupti laborum odio numquam vitae nobis nihil laboriosam ipsa
+             sit voluptatibus nulla. Lorem ipsum, dolor sit 
+        
+
         </div>
     </div>
 </div>

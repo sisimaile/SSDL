@@ -1,0 +1,85 @@
+<div class="col-lg-6 ">
+                            <img src="images/' . $sponsor['Lid_logo'] . '" alt="sponsor logo">
+                            </div>
+                            <div class="col-md-12 col-lg-6 text-center">
+                                <h2>' . $value['Lid_gebruikersnaam'] . '</h2>
+                                <p>' . $sponsor['Lid_tekst'] . '</p>
+                                <br>
+                                <form action="sponsorenpage.php" method="post">
+                                    <input type="submit" class="btn btn-primary mx-2" name="deleteSponsor" value="delete sponsor">
+                                    <input type="hidden" name="id" value="' . $value['Lidgegevens_ID'] . '"> 
+                                </form>
+                                <form action="sponsor_wijzigen.php" method="get">
+                                    <input type="submit" class="btn btn-primary mx-2" name="wijzigSponsor" value="wijzig sponsor">
+                                    <input type="hidden" name="id" value="' . $value['Lidgegevens_ID'] . '">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    viewonesponsor
+
+                    '<div class="container ">
+                        <div class="row paddng my-4">
+                            <div class="col-lg-6 text-center">
+                                <h3>Naam: ' . $value['Lid_gebruikersnaam'] . ' </h3>
+                                <h3>Adres: ' . $sponsor['Lid_adres'] . ' </h3>
+                                <h3>Plaats: ' . $sponsor['Lid_plaats'] . ' </h3>
+                                <h3>Email: ' . $sponsor['Lid_email'] . ' </h3>
+                                <h3>Telefoonnummer: ' . $sponsor['Lid_telefoonnummer'] . ' </h3>
+                                <h3>Tekst: ' . $sponsor['Lid_tekst'] . ' </h3>
+                                <h3>Logo: ' . $sponsor['Lid_logo'] . ' </h3>
+                            </div>
+                        </div>
+                    </div>'
+
+                    showactiviteitenpagin
+
+                    <div class="container home-over-ons">
+    <div class="row ">
+        <div class="col-md-12 col-lg-6 ">
+            <h2 class="display-3">' . $data['Pagina_titel'] . '</h2>
+            
+            <p>' . $data['Pagina_tekst'] . '</p>
+            <br>
+        </div>
+        <div class="col-lg-6">       
+        </div>
+    </div>
+</div>
+
+
+functie show all activities
+
+<div class='card' style='width: 18rem;'>
+                    <img src= 'images/" . $data['Activiteit_image'] . "' class='card-img-top' alt='...'>
+                    <div class='card-body'>
+                        <h5 class='card-title'>" . $data['Activiteit_Naam'] . "</h5>
+                        <h6 class='card-subtitle mb-2 text-muted'>" . $data['Activiteit_Datum'] . "</h6>
+                        <p class='card-text'>" . $data['Activiteit_Beschrijving'] . "</p>
+                        <p class='card-text'>plaats: " . $data['Activiteit_Plaats'] . " - adres: " . $data['Activiteit_Straat'] . " " . $data['Activiteit_Huisnummer'] . " - Postcode: " . $data['Activiteit_Postcode'] . "</p>
+                    </div>
+                    <div>
+                        <form action='activiteit-change.php' method='get'>
+                            <input type='submit' value='change' name='activiteitupdate'>
+                            <input type='hidden' name='id' value='" . $data['Activiteit_ID'] . "'>
+                        </form>
+                    </div>
+                    <div>
+                        <form action='activiteiten-overzichtpage.php' method='post'>
+                            <input type='submit' value='delete' name='activiteitdelete'>
+                            <input type='hidden' name='id' value='" . $data['Activiteit_ID'] . "'>
+                        </form>
+                    </div>
+                    <div>
+                        <form action='activiteiten-aanmelden.php' method='post'>
+                            <input type='submit' value='aanmelden' name='aanmelden'>
+                            <input type='hidden' name='id' value='" . $data['Activiteit_ID'] . "'>
+                        </form>
+                        "; $activiteitid = $data['Activiteit_ID'];
+                            $aantaldeelnemers = $this->getallDeelnemers($activiteitid);
+                            echo 'aantal deelnemers: ' . $aantaldeelnemers . "
+                    </div>
+                    </div>
+                </div>

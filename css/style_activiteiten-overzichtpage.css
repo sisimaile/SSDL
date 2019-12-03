@@ -1,0 +1,163 @@
+body{
+    overflow-x: hidden;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+  }
+  
+    
+    /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+    .content {
+      margin-left: 250px;
+      padding: 0px 0px;
+  }
+
+  .bekijkactiviteitentitel h1{
+    font-family: 'Neucha', cursive; 
+    color: #013220;
+    border-bottom: 1px solid #013220;
+  }
+
+/*SHOW ACTIVITEITEN PAGINA*/
+  .showactiviteitenpPagina-h5 {
+    font-family: 'Neucha', cursive; 
+    color: #013220;
+    border-bottom: 1px solid #013220;
+}
+
+.showactiviteitenpPagina-tekst{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 110%;
+    color: black;
+}
+
+.showallactivitiescard{
+  border: 2px solid #013220;
+  margin: 10px;
+}
+.showAllActivities-h5{
+  font-family: 'Neucha', cursive; 
+    color: #013220;
+    border-bottom: 1px solid #013220;
+}
+
+.showAllActivities-h6{
+  color: black;
+}
+
+.showAllActivities-text{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 110%;
+  color: black;
+}
+
+.btnactiviteitaanpassen{
+      color: white;
+      background: #013220;
+      width: 30%;
+      padding: 5px;
+      font-size: 18px;
+      margin: 5px 10px;
+      border: 1px solid #013220;
+}
+
+.btnactiviteitaanpassen:hover{
+  color: #013220;
+  background: white;
+ padding: 5px;
+ width: 30%;
+ font-size: 18px;
+ margin: 5px 10px;
+  border: 1px solid #013220;
+}
+
+.btnactiviteitverwijderen{
+  color: white;
+      background: #013220;
+      width: 30%;
+      padding: 5px;
+      font-size: 18px;
+      margin: 5px 10px;
+      border: 1px solid #013220;
+}
+
+.btnactiviteitverwijderen:hover{
+  color: #013220;
+  background: white;
+ padding: 5px;
+ width: 30%;
+ font-size: 18px;
+ margin: 5px 10px;
+  border: 1px solid #013220;
+}
+
+.btnactiviteitaanmelden{
+  color: white;
+      background: #013220;
+      width: 40%;
+      padding: 5px;
+      font-size: 18px;
+      margin: 5px 10px;
+      border: 1px solid #013220;
+}
+
+.btnactiviteitaanmelden:hover{
+  color: #013220;
+  background: white;
+ padding: 5px;
+ width: 40%;
+ font-size: 18px;
+ margin: 5px 10px;
+  border: 1px solid #013220;
+}
+
+.showallactiviteiten-aantaldeelnemers{
+  color: #013220;
+  font-size: 18px;
+
+}
+
+
+
+
+  
+     /*FOOTER*/
+     footer {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width:100%;
+        background-color: #013220;
+        color: white;
+        text-align: center;
+      }
+
+      /* On screens that are less than 700px wide, make the sidebar into a topbar */
+    @media screen and (max-width: 700px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+  
+      .sidebar a {
+        float: left;
+      }
+
+      div.content {
+        margin-left: 0;
+      }
+
+
+
+    }
+    
+    /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+    @media screen and (max-width: 400px) {
+      .sidebar a {
+        text-align: center;
+        float: none;
+      }
+    }

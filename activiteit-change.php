@@ -1,9 +1,9 @@
 <?php
-
+//include "nav.php";
 include 'processen/Connection.php';
 include 'processen/class_activiteit.php';
 include 'processen/viewActivity.php';
-//include "nav.php";
+
 
 if (isset($_POST['activiteitchange'])){
     $activiteitID = $_POST['id'];
@@ -39,33 +39,69 @@ if (isset($_POST['activiteitchange'])){
     <link rel="shortcut icon" type="image/png" href="images/favicon1.png">
   </head>
   <body>
-<section id="pagina-content">
-    <h3>Huidige gegevens</h3>
-    <?php
-    $selectedActiviteit = new viewActivity();
-    $selectedActiviteit->showOneActiviteit($_GET["id"]);
-    ?>
+              <div class="content">
+                  <section id="pagina-content">
 
-    <h3>Nieuwe gegevens</h3>
+                  <h3>Huidige gegevens</h3>
+                  <?php
+                  $selectedActiviteit = new viewActivity();
+                  $selectedActiviteit->showOneActiviteit($_GET["id"]);
+              ?>
+          </div>
+
+
+
+
+    <h3 class="test content">Nieuwe gegevens</h3>
     <?php
-    echo "<form action='activiteit-change.php' method='post'>
+    echo "
+    <div class='container-fluid'>
+    <div class='content'>
+    <div class='activiteit-aanpassen-box'> 
+    <form action='activiteit-change.php' method='post'>
+        
+    <div class='textbox-activiteit-aanpassen form-group'>
         Naam:<br>
         <input type='text' name='naam'><br>
+    </div> 
+        
+    <div class='textbox-activiteit-aanpassen form-group'>
         Datum:<br>
         <input type='date' name='datum'><br>
+    </div> 
+       
+    <div class='textbox-activiteit-aanpassen form-group'>
         Straat:<br>
         <input type='text' name='straat'><br>
+    </div> 
+        
+    <div class='textbox-activiteit-aanpassen form-group'>
         Huisnummer:<br>
         <input type='text' name='huisnummer'><br>
+    </div> 
+
+    <div class='textbox-activiteit-aanpassen form-group'>
         Postcode:<br>
-        <input type='text' name='postcode'><br>
-        Beschrijving:<br>
+       <input type='text' name='postcode'><br>
+    </div> 
+       
+    <div class='textbox-activiteit-aanpassen form-group'>Beschrijving:<br>
         <textarea name='beschrijving'></textarea><br>
+    </div> 
+        
+        
+    <div class='textbox-activiteit-aanpassen form-group'>
         Image:<br>
         <input type='text' name='image'> <br><br>
-        <input type='submit' value='change' name= 'activiteitchange'>
+    </div> 
+       
+        <input type='submit' value='change' class='knop-activiteit-aanpassen' name= 'activiteitchange'>
         <input type='hidden' value='" . $_GET['id'] . "' name='id'>
-    </form>";
+    </form>
+    
+    </div>
+    </div>
+    </div>";
     ?>
 </section>
     </body>

@@ -37,7 +37,7 @@ body{
     }
  
     .btn-sidebar{
-      color: #013220;
+      color: black;
       width: 50%;
       background: none;
       border: 2px solid #013220;
@@ -46,7 +46,6 @@ body{
        margin: 12px 0;
     }
 
-   
     .btn-sidebar:hover {
       color: white;
       width: 50%;
@@ -94,7 +93,7 @@ body{
       }
 
       
-      .knopsidebar button {
+      .btn-sidebar  {
         color: white;
         width: 20%;
         background: #013220;
@@ -104,7 +103,7 @@ body{
          margin: 12px 0;
       }
   
-      .knopsidebar button:hover {
+      .btn-sidebar:hover {
         color: #013220;
         width: 20%;
         background: none;
