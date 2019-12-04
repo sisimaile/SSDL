@@ -1,5 +1,6 @@
 <?php
 
+include_once 'lid.php';
 
 class ViewLid extends lid
 {

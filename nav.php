@@ -8,6 +8,7 @@ include 'processen/Pagina.php';
 include 'processen/ViewPagina.php';
 include 'processen/class_view_sponsor.php';
 include 'processen/viewActivity.php';
+include 'processen/ViewLid.php';
 
 ?>
 <!doctype html>

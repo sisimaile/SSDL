@@ -1,7 +1,6 @@
 <?php
 
-include 'processen/Connection.php';
-include 'processen/lid.php';
+include_once 'nav.php';
 
 if (isset($_POST['submit'])){
     $username = $_POST['username'];
@@ -77,11 +76,4 @@ if (isset($_POST['submit'])){
             </section>
 
         </div>
-
-       
-
-
-   
-
-
 </body>

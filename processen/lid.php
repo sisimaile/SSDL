@@ -1,6 +1,7 @@
 <?php
 
-session_start();
+include_once 'Connection.php';
+include_once 'nav.php';
 
 class lid extends Connection
 {
@@ -42,7 +43,7 @@ class lid extends Connection
             $results = $result->num_rows;
 
             if ($results > 0){
-                header("Location: leden-aanmelden.php?gebruikersnaam-bestaat-al");
+                echo 'gebruikersnaam bestaat al';
             } else {
                 if ($password == $passwordcheck) {
                     $hashedpassword =  hash('sha256', $password);
@@ -63,8 +64,7 @@ class lid extends Connection
                     $sqlaanmeldenlid = "INSERT INTO `lid` (Lid_email, Lid_telefoonnummer, Lid_plaats, Lid_adres, FK_lidgegevens_ID) VALUES ('$email', '$telefoonnummer', '$plaats', '$adres', '$FKlidgegevens')";
                     $resultaanmeldenlid = $conn2->query($sqlaanmeldenlid);
                     if ($resultaanmeldenlid){
-                        echo "hij werkt";
-                        header("Location: login.php?account-aangemaakt");
+                        echo "aangemeld.";
                     } else {
                         echo "sql error: " . $conn2->error;
                         return;
@@ -93,7 +93,7 @@ class lid extends Connection
 
             if ($results > 0){
                 $_SESSION['lid'] = $username;
-                header("Location: homepage.php?pagina=home");
+                echo 'u bent ingelogd';
             }else{
                 echo "de gebruikersnaam of wachtwoord klopt niet";
             }

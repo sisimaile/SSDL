@@ -1,9 +1,7 @@
 <?php
 
 
-
-include 'processen/Connection.php';
-include 'processen/lid.php';
+include "nav.php";
 
 if (isset($_POST['submit'])){
     $username = $_POST['username'];

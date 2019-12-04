@@ -1,8 +1,6 @@
 <?php
 
-include 'processen/Connection.php';
-include 'processen/lid.php';
-include 'processen/ViewLid.php';
+include_once 'nav.php';
 
 if (isset($_POST['liddelete'])){
     $lidgegevensID = $_POST['gegevensid'];

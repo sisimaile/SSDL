@@ -1,7 +1,7 @@
 <?php
 
 include 'nav.php';
-include 'processen/lid.php';
+include_once 'processen/lid.php';
 
 if (isset($_POST['submit'])){
     $naam = $_POST['naam'];
